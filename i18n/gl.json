@@ -7,7 +7,7 @@
 	},
 	"bs-interwikilinks-desc": "Interface administrativa para engadir, editar e eliminar ligazóns interwiki",
 	"bs-interwikilinks-invalid-pfx-spc": "O prefixo é inválido. Por favor, non use espazos.",
-	"bs-interwikilinks-invalid-url-spc": "A URL é inválida. Por favor, non use espazos.",
+	"bs-interwikilinks-invalid-url-spc": "A URL non é válida. Por favor, non use espazos.",
 	"bs-interwikilinks-label": "Ligazóns interwikis",
 	"bs-interwikilinks-link-created": "Creouse a ligazón interwiki.",
 	"bs-interwikilinks-link-added": "Engadiuse a ligazón interwiki.",
