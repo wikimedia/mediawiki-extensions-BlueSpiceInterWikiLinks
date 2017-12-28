@@ -5,10 +5,10 @@
 			"Hamilton Abreu"
 		]
 	},
-	"bs-interwikilinks-desc": "Interface de administração para adicionar, editar ou eliminar ligações interwikis",
+	"bs-interwikilinks-desc": "Interface de administração para adicionar, editar ou eliminar hiperligações interwikis",
 	"bs-interwikilinks-invalid-pfx-spc": "O prefixo é inválido. Por favor, não use espaços.",
 	"bs-interwikilinks-invalid-url-spc": "O URL é inválido. Por favor, não use espaços.",
-	"bs-interwikilinks-label": "Ligações interwikis",
+	"bs-interwikilinks-label": "Hiperligações interwikis",
 	"bs-interwikilinks-link-created": "A hiperligação interwikis foi criada.",
 	"bs-interwikilinks-link-added": "A hiperligação interwikis foi adicionada.",
 	"bs-interwikilinks-link-deleted": "A hiperligação interwikis foi eliminada.",
@@ -22,7 +22,7 @@
 	"bs-interwikilinks-titleeditinterwikilink": "Editar hiperligação interwikis",
 	"bs-interwikilinks-labelprefix": "Prefixo",
 	"bs-interwikilinks-titledeleteinterwikilink": "Eliminar hiperligação interwikis",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "Tem a certeza de que pretende eliminar esta ligação interwikis?",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Tem a certeza de que pretende eliminar esta hiperligação interwikis?",
 	"bs-interwikilinks-insertlink-tabtitle": "Ligar a outra wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Prefixo",
 	"bs-interwikilink-select-a-prefix": "Escolha o prefixo",
@@ -30,5 +30,5 @@
 	"apihelp-bs-interwikilinks-tasks-description": "Fornece as tarefas para a extensão InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Fornece as tarefas para a extensão InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "ver página especial \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "Ligações interwikis"
+	"interwikilinks": "Hiperligações interwikis"
 }
