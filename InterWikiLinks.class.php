@@ -37,21 +37,6 @@
  */
 class InterWikiLinks extends BsExtensionMW {
 
-	/**
-	 * Constructor of InterWikiLinks class
-	 */
-	public function __construct() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-		WikiAdmin::registerModule( 'InterWikiLinks', [
-			'image' => '/extensions/BlueSpiceExtensions/WikiAdmin/resources/images/bs-btn_interwikilinks_v1.png',
-			'level' => 'wikiadmin',
-			'message' => 'bs-interwikilinks-label',
-			'iconCls' => 'bs-icon-chain',
-			'permissions' => [ 'interwikilinks-viewspecialpage' ],
-		]);
-		wfProfileOut( 'BS::'.__METHOD__ );
-	}
-
 	protected function initExt() {
 		wfProfileIn('BS::InterWikiLinks::initExt');
 

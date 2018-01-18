@@ -16,6 +16,12 @@
 			"extPath": "/BlueSpiceInterWikiLinks"
 		}
 	},
+	"BlueSpiceFoundationAdminToolRegistry": {
+		"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\InterWikiLinks\\" : "src/"
+	},
 	"SpecialPages": {
 		"InterWikiLinks": "SpecialInterWikiLinks"
 	},
