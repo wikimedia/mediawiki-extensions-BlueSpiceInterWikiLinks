@@ -8,6 +8,11 @@
  * @group BlueSpiceInterWikiLnksManager
  */
 class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
+	protected function setUp() {
+		parent::setUp();
+		$this->tablesUsed[] = 'interwiki';
+	}
+
 	protected function getModuleName( ) {
 		return 'bs-interwikilinks-tasks';
 	}
@@ -75,4 +80,3 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		return false;
 	}
 }
-
