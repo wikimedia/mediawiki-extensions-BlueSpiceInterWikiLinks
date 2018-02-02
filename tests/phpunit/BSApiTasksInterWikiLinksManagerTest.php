@@ -3,9 +3,10 @@
 /**
  * @group medium
  * @group API
+ * @group Database
  * @group BlueSpice
  * @group BlueSpiceExtensions
- * @group BlueSpiceInterWikiLnksManager
+ * @group BlueSpiceInterWikiLinksManager
  */
 class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	protected function setUp() {
@@ -17,7 +18,7 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		return 'bs-interwikilinks-tasks';
 	}
 
-	public function testEditInterWikiLink() {
+	public function testCreateInterWikiLink() {
 		$oCreateData = $this->executeTask(
 			'editInterWikiLink',
 			array(
@@ -26,15 +27,21 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 			)
 		);
 
-		$this->assertTrue( $oCreateData->success );
-
-		$this->assertSelect(
-			'interwiki',
-			array( 'iw_prefix', 'iw_url' ),
-			array( 'iw_prefix' => 'dummylink'),
-			array( array ( 'dummylink', 'http://some.wiki.com/$1' ) )
+		$this->assertTrue(
+			$oCreateData->success,
+			"The interwiki link could not be created."
+		);
+		$this->assertTrue(
+			$this->existsWithValue( 'dummylink', 'http://some.wiki.com/$1' ),
+			"The new interwiki link does not exist in the database."
 		);
 
+		// Cache reset is needed here, so that MW updates the interwiki list already
+		// during the test run.
+		$this->clearCache();
+	}
+
+	public function testEditInterWikiLink() {
 		$oEditData = $this->executeTask(
 			'editInterWikiLink',
 			array(
@@ -44,21 +51,25 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 			)
 		);
 
-		$this->assertTrue( $oEditData->success );
-
-		$this->assertTrue( $this->isDeleted( 'dummylink') );
-
-		$this->assertSelect(
-			'interwiki',
-			array( 'iw_prefix', 'iw_url' ),
-			array( 'iw_prefix' => 'fauxlink'),
-			array( array ( 'fauxlink', 'http://some.wiki.com/wiki/$1' ) )
+		$this->assertTrue(
+			$oEditData->success,
+			"The interwiki link could not be edited."
 		);
+		$this->assertTrue(
+			$this->isDeleted( 'dummylink' ),
+			"The old interwiki link still exists in the database."
+		);
+		$this->assertTrue(
+			$this->existsWithValue( 'fauxlink', 'http://some.wiki.com/wiki/$1' ),
+			"The new interwiki link does not exist in the database."
+		);
+
+		// Cache reset is needed here, so that MW updates the interwiki list already
+		// during the test run.
+		$this->clearCache();
 	}
 
 	public function testRemoveInterWikiLink() {
-		$this->assertFalse( $this->isDeleted( 'fauxlink' ) );
-
 		$oDeleteData = $this->executeTask(
 			'removeInterWikiLink',
 			array(
@@ -66,17 +77,40 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 			)
 		);
 
-		$this->assertTrue( $oDeleteData->success );
-		$this->assertTrue( $this->isDeleted( 'fauxlink' ) );
+		$this->assertTrue(
+			$oDeleteData->success,
+			"The interwiki link could not be deleted"
+		);
+		$this->assertTrue(
+			$this->isDeleted( 'fauxlink' ),
+			"The interwiki link is still present"
+		);
 	}
 
 	protected function isDeleted( $sValue ) {
-		$db = wfGetDB( DB_REPLICA );
-		$res = $db->select( 'interwiki', array( 'iw_prefix' ), array( 'iw_prefix' => $sValue ), wfGetCaller() );
-		if( $res->numRows() === 0 ) {
-			return true;
-		}
+		$res = $this->db->select(
+			'interwiki',
+			array( 'iw_prefix' ),
+			array( 'iw_prefix' => $sValue ),
+			wfGetCaller()
+		);
+		return ( $res->numRows() === 0 ) ? true : false;
+	}
 
-		return false;
+	protected function existsWithValue( $prefix, $value ) {
+		$res = $this->db->select(
+			'interwiki',
+			array( 'iw_prefix', 'iw_url' ),
+			array(
+				'iw_prefix' => $prefix,
+				'iw_url' => $value
+			),
+			wfGetCaller()
+		);
+		return ( $res->numRows() > 0 ) ? true : false;
+	}
+
+	protected function clearCache() {
+		\MediaWiki\MediaWikiServices::getInstance()->getInterwikiLookup()->resetLocalCache();
 	}
 }

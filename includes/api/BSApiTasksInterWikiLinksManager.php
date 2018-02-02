@@ -211,6 +211,8 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		$aValues = array(
 			'iw_prefix' => $sPrefix,
 			'iw_url' => $sUrl,
+			'iw_api' => '',
+			'iw_wikiid' => ''
 		);
 
 		if( empty($sOldPrefix) ) {
@@ -310,7 +312,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( isset( $this->aIWLexists[$sPrefix] ) ) {
 			return $this->aIWLexists[$sPrefix];
 		}
-		if ( version_compare( $GLOBALS['wgVersion'], '1.28c', '>' ) ) {
+		if ( version_compare( $GLOBALS['wgVersion'], '1.28', '>' ) ) {
 			$this->aIWLexists[$sPrefix] = \MediaWiki\MediaWikiServices::getInstance()->getInterwikiLookup()->isValidInterwiki( $sPrefix );
 		} else {
 			$row = $this->getDB()->selectRow(
