@@ -38,13 +38,9 @@
 class InterWikiLinks extends BsExtensionMW {
 
 	protected function initExt() {
-		wfProfileIn('BS::InterWikiLinks::initExt');
-
 		$this->setHook( 'BeforePageDisplay' );
 
 		$this->mCore->registerPermission( 'interwikilinks-viewspecialpage', array('sysop'), array( 'type' => 'global' ) );
-
-		wfProfileOut('BS::InterWikiLinks::initExt');
 	}
 
 	/**
