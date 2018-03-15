@@ -28,7 +28,9 @@ Ext.define( 'BS.InterWikiLinks.Panel', {
 			sortable: true,
 			dataIndex: 'iw_prefix',
 			flex: 1,
-			filterable: true
+			filter: {
+				type: 'string'
+			}
 		} );
 		this.colIWLUrl = Ext.create( 'Ext.grid.column.Column', {
 			id: 'iw_url',
@@ -36,7 +38,9 @@ Ext.define( 'BS.InterWikiLinks.Panel', {
 			sortable: true,
 			dataIndex: 'iw_url',
 			flex: 1,
-			filterable: true
+			filter: {
+				type: 'string'
+			}
 		} );
 
 		this.colMainConf.columns = [

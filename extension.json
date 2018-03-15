@@ -32,6 +32,9 @@
 						"demo"
 					]
 				}
+			},
+			"AdminToolRegistry": {
+				"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
 			}
 		}
 	},
@@ -49,9 +52,6 @@
 	"AvailableRights": [
 		"interwikilinks-viewspecialpage"
 	],
-	"BlueSpiceFoundationAdminToolRegistry": {
-		"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
-	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\InterWikiLinks\\" : "src/"
 	},
@@ -108,5 +108,5 @@
 		"remoteExtPath": "BlueSpiceInterWikiLinks/resources"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }

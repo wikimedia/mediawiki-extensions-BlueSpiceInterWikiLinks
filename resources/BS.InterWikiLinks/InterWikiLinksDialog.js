@@ -13,10 +13,10 @@
  */
 
 Ext.define( 'BS.InterWikiLinks.InterWikiLinksDialog', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	currentData: {},
 	selectedData: {},
-	afterInitComponent: function() {
+	makeItems: function() {
 		this.tfIWLPrefix = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message( 'bs-interwikilinks-labelprefix' ).plain(),
 			labelWidth: 85,
@@ -32,12 +32,10 @@ Ext.define( 'BS.InterWikiLinks.InterWikiLinksDialog', {
 			allowBlank: false
 		});
 
-		this.items = [
+		return [
 			this.tfIWLPrefix,
 			this.tfIWLUrl
 		];
-
-		this.callParent( arguments );
 	},
 	resetData: function() {
 		this.tfIWLPrefix.reset();
