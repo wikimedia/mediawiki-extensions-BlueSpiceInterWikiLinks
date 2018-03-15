@@ -16,12 +16,39 @@
 			"BlueSpiceFoundation": "*"
 		}
 	},
-	"bsgExtensions": {
-		"BlueSpiceInterWikiLinks": {
-			"className": "InterWikiLinks",
-			"extPath": "/BlueSpiceInterWikiLinks"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceInterWikiLinks": {
+					"className": "InterWikiLinks",
+					"extPath": "/BlueSpiceInterWikiLinks"
+				}
+			},
+			"PermissionRegistry": {
+				"interwikilinks-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"demo"
+					]
+				}
+			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"interwikilinks-viewspecialpage": false
+		},
+		"user": {
+			"interwikilinks-viewspecialpage": false
+		},
+		"sysop": {
+			"interwikilinks-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"interwikilinks-viewspecialpage"
+	],
 	"BlueSpiceFoundationAdminToolRegistry": {
 		"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
 	},

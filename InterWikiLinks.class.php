@@ -39,8 +39,6 @@ class InterWikiLinks extends BsExtensionMW {
 
 	protected function initExt() {
 		$this->setHook( 'BeforePageDisplay' );
-
-		$this->mCore->registerPermission( 'interwikilinks-viewspecialpage', array('sysop'), array( 'type' => 'global' ) );
 	}
 
 	/**
