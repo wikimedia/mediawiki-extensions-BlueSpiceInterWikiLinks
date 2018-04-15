@@ -26,5 +26,8 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Претставка",
 	"bs-interwikilink-select-a-prefix": "Изберете претставка",
 	"bs-interwikilinks-link-edited": "Меѓујазичната врска е изменета.",
-	"apihelp-bs-interwikilinks-tasks-description": "Ги дава задачите за додатокот „Меѓујазични врски“."
+	"apihelp-bs-interwikilinks-tasks-description": "Ги дава задачите за додатокот „Меѓујазични врски“.",
+	"apihelp-bs-interwikilinks-tasks-summary": "Ги дава задачите за додатокот „Меѓујазични врски“.",
+	"action-interwikilinks-viewspecialpage": "преглед на службената страница „{{int:bs-interwikilinks-label}}“",
+	"interwikilinks": "Меѓујазични врски"
 }
