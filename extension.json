@@ -71,9 +71,6 @@
 		"BSApiTasksInterWikiLinksManager": "includes/api/BSApiTasksInterWikiLinksManager.php",
 		"SpecialInterWikiLinks": "includes/specials/SpecialInterWikiLinks.class.php"
 	},
-	"Hooks": {
-		"UnitTestsList": "InterWikiLinks::onUnitTestsList"
-	},
 	"ExtensionMessagesFiles": {
 		"InterWikiLinksAlias": "includes/specials/SpecialInterWikiLinks.alias.php"
 	},
