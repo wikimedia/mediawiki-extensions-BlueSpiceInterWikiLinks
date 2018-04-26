@@ -24,5 +24,6 @@
 	"bs-interwikilinks-confirmdeleteinterwikilink": "このウィキ間リンクを本当に削除しますか?",
 	"bs-interwikilinks-insertlink-tabtitle": "他のWikiへのリンク",
 	"bs-interwikilinks-insertlink-labelprefix": "接頭辞",
-	"bs-interwikilink-select-a-prefix": "接頭辞を選択"
+	"bs-interwikilink-select-a-prefix": "接頭辞を選択",
+	"interwikilinks": "ウィキ間リンク"
 }
