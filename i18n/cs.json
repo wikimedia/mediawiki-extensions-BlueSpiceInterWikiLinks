@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriccck"
+			"Patriccck",
+			"Mormegil"
 		]
 	},
 	"bs-interwikilinks-desc": "Administrační rozhraní pro přidávání, editování a mazání odkazů na interwiki",
@@ -28,6 +29,6 @@
 	"bs-interwikilinks-link-edited": "Odkaz na interwiki byl upraven",
 	"apihelp-bs-interwikilinks-tasks-description": "Poskytuje úlohy pro rozšíření rozhraní InterWiki.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Poskytuje úlohy pro rozšíření rozhraní InterWiki.",
-	"action-interwikilinks-viewspecialpage": "podívejte se na tuto speciální stránku „{{int:bs-interwikilinks-label}}“",
+	"action-interwikilinks-viewspecialpage": "prohlížet si speciální stránku „{{int:bs-interwikilinks-label}}“",
 	"interwikilinks": "Interwiki odkazy"
 }
