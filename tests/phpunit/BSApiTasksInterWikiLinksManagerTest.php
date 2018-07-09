@@ -13,6 +13,7 @@ use BlueSpice\Tests\BSApiTasksTestBase;
 class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	protected function setUp() {
 		parent::setUp();
+		$GLOBALS['wgGroupPermissions']['user']['wikiadmin'] = true;
 		$this->tablesUsed[] = 'interwiki';
 	}
 
