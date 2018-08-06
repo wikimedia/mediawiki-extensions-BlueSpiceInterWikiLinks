@@ -5,7 +5,8 @@
 			"Okras",
 			"Striking Blue",
 			"Kaganer",
-			"Mouse21"
+			"Mouse21",
+			"Vlad5250"
 		]
 	},
 	"bs-interwikilinks-desc": "Административный интерфейс для добавления, правки и удаления ссылок интервики",
@@ -33,5 +34,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "Предоставляет задачи для расширения InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Предоставляет задачи для расширения InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "просмотреть специальную страницу \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "Интервики-ссылки"
+	"interwikilinks": "Интервики-ссылки",
+	"right-interwikilinks-viewspecialpage": "доступ к служебной странице [[Special:InterWikiLinks]]."
 }

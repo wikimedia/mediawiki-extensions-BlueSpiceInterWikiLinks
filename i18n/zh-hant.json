@@ -30,5 +30,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "提供用於 InterWikiLinks 擴充的任務。",
 	"apihelp-bs-interwikilinks-tasks-summary": "提供用於 InterWikiLinks 擴充的任務。",
 	"action-interwikilinks-viewspecialpage": "檢視特定頁面「{{int:bs-interwikilinks-label}}」",
-	"interwikilinks": "跨 wiki 連結"
+	"interwikilinks": "跨 wiki 連結",
+	"right-interwikilinks-viewspecialpage": "授予存取特殊頁面 [[Special:InterWikiLinks]] 的權限。"
 }

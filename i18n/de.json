@@ -31,5 +31,6 @@
 	"bs-interwikilinks-link-edited": "Der Interwiki-Link wurde bearbeitet",
 	"apihelp-bs-interwikilinks-tasks-description": "Bietet die Aufgaben für die Erweiterung InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "die Spezialseite „{{int:bs-interwikilinks-label}}“ anzusehen",
-	"interwikilinks": "Interwikilinks"
+	"interwikilinks": "Interwikilinks",
+	"right-interwikilinks-viewspecialpage": "Zugriff auf die Spezialseite [[Special:InterWikiLinks]] gewähren."
 }

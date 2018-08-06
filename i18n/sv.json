@@ -29,5 +29,6 @@
 	"bs-interwikilink-select-a-prefix": "Välj prefix",
 	"bs-interwikilinks-link-edited": "Interwikilänken har redigerats",
 	"action-interwikilinks-viewspecialpage": "visa specialsidan \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "Interwiki-länkar"
+	"interwikilinks": "Interwiki-länkar",
+	"right-interwikilinks-viewspecialpage": "Ger åtkomst till specialsidan [[Special:InterWikiLinks]]."
 }
