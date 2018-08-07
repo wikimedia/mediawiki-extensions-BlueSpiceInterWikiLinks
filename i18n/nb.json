@@ -29,5 +29,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "Gir oppgaver for utvidelsen InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Gir oppgaver for utvidelsen InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "vise spesialsiden «{{int:bs-interwikilinks-label}}»",
-	"interwikilinks": "Interwikilenker"
+	"interwikilinks": "Interwikilenker",
+	"right-interwikilinks-viewspecialpage": "Gir tilgang til spesialsiden [[Special:InterWikiLinks]]."
 }
