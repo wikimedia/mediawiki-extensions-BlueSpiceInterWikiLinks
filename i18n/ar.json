@@ -30,5 +30,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "يقدم المهام لامتداد InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "يقدم المهام لامتداد InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "عرض الصفحة الخاصة \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "روابط الإنترويكي"
+	"interwikilinks": "روابط الإنترويكي",
+	"right-interwikilinks-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:InterWikiLinks]]."
 }
