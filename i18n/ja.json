@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"2nd-player"
+			"2nd-player",
+			"Suyama"
 		]
 	},
 	"bs-interwikilinks-desc": "ウィキ間リンクを追加/編集/削除する管理インターフェイス",
@@ -25,5 +26,6 @@
 	"bs-interwikilinks-insertlink-tabtitle": "他のWikiへのリンク",
 	"bs-interwikilinks-insertlink-labelprefix": "接頭辞",
 	"bs-interwikilink-select-a-prefix": "接頭辞を選択",
-	"interwikilinks": "ウィキ間リンク"
+	"interwikilinks": "ウィキ間リンク",
+	"right-interwikilinks-viewspecialpage": "特別ページ [[Special:InterWikiLinks]] の利用を許可します。"
 }
