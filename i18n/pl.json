@@ -21,5 +21,6 @@
 	"bs-interwikilinks-insertlink-tabtitle": "Link do innej wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Przedrostek",
 	"bs-interwikilink-select-a-prefix": "Wybierz przedrostek",
-	"interwikilinks": "Linki interwiki"
+	"interwikilinks": "Linki interwiki",
+	"right-interwikilinks-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:InterWikiLinks]]."
 }
