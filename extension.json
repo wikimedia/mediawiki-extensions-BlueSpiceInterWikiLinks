@@ -29,7 +29,8 @@
 					"type": "global",
 					"roles": [
 						"admin",
-						"demo"
+						"editor",
+						"maintenanceadmin"
 					]
 				}
 			},
