@@ -12,7 +12,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
  * @filesource
  */
-class SpecialInterWikiLinks extends BsSpecialPage {
+class SpecialInterWikiLinks extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'InterWikiLinks', 'interwikilinks-viewspecialpage' );
@@ -28,10 +28,6 @@ class SpecialInterWikiLinks extends BsSpecialPage {
 
 		$oOutputPage->addModules( 'ext.bluespice.interWikiLinks' );
 		$oOutputPage->addHTML( '<div id="InterWikiLinksGrid" class="bs-manager-container"></div>' );
-	}
-
-	protected function getGroupName() {
-		return 'bluespice';
 	}
 
 }
