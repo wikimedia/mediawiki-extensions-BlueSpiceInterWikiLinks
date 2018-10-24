@@ -105,6 +105,9 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceInterWikiLinks/resources"
 	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\InterWikiLinks\\Hook\\BeforePageDisplay\\AddResources::callback"
+	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
