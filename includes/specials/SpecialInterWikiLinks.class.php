@@ -24,8 +24,6 @@ class SpecialInterWikiLinks extends \BlueSpice\SpecialPage {
 
 		$oOutputPage->addModules( 'bluespice.insertLink.interWikiLinks' );
 
-		$oOutputPage->addJsConfigVars( 'BSInterWikiPrefixes', InterWikiLinks::getInterWikiLinkPrefixes() );
-
 		$oOutputPage->addModules( 'ext.bluespice.interWikiLinks' );
 		$oOutputPage->addHTML( '<div id="InterWikiLinksGrid" class="bs-manager-container"></div>' );
 	}
