@@ -218,12 +218,13 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		}
 
 		$aConditions['iw_prefix'] = $sOldPrefix;
-		$oReturn->success = $oDB->update(
+		$oDB->update(
 			$sTable,
 			$aValues,
 			$aConditions,
 			__METHOD__
 		);
+		$oReturn->success = true;
 		$oReturn->message = wfMessage(
 			'bs-interwikilinks-link-edited'
 		)->plain();
