@@ -203,11 +203,12 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		];
 
 		if( empty( $sOldPrefix ) ) {
-			$oReturn->success = $oDB->insert(
+			$oDB->insert(
 				$sTable,
 				array_merge( $aConditions, $aValues ),
 				__METHOD__
 			);
+			$oReturn->success = true;
 			$oReturn->message = wfMessage(
 				'bs-interwikilinks-link-created'
 			)->plain();
