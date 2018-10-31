@@ -37,40 +37,7 @@
  */
 class InterWikiLinks extends BsExtensionMW {
 
-	protected function initExt() {
-		$this->setHook( 'BeforePageDisplay' );
-	}
-
-	/**
-	 *
-	 * @param OutputPage $oOutputPage
-	 * @param Skin $oSkin
-	 * @return boolean - always true
-	 */
-	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
-		if( !in_array($oOutputPage->getRequest()->getVal('action', 'view'), array('edit', 'submit')) ) return true;
-		$oOutputPage->addModules('bluespice.insertLink.interWikiLinks');
-		//TODO implement ow
-		$oOutputPage->addJsConfigVars( 'BSInterWikiPrefixes', $this->getInterWikiLinkPrefixes() );
-
-		return true;
-	}
-
-	public static function getInterWikiLinkPrefixes() {
-		$oDbr = wfGetDB( DB_REPLICA );
-		$rRes = $oDbr->select(
-				'interwiki',
-				'iw_prefix',
-				'',
-				'',
-				array( "ORDER BY" => "iw_prefix" )
-		);
-
-		$aInterWikiPrefixes = array();
-		while( $o = $oDbr->fetchObject($rRes) ) $aInterWikiPrefixes[] = $o->iw_prefix;
-
-		return $aInterWikiPrefixes;
-	}
+	protected function initExt() {}
 
 	public static function purgeTitles($iw_prefix) {
 		$dbr = wfGetDB( DB_REPLICA );
