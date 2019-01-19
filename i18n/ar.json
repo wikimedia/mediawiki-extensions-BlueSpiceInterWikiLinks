@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-interwikilinks-desc": "واجهة الإدارة لإضافة وتحرير وحذف روابط الإنترويكي",
@@ -18,9 +19,11 @@
 	"bs-interwikilinks-pfxtoolong": "البادئة طويلة جدا; يُرجَى استخدام 32 حرفا كحد أقصى.",
 	"bs-interwikilinks-pfxexists": "هذه البادئة موجودة بالفعل.",
 	"bs-interwikilinks-headerprefix": "البادئة",
+	"bs-interwikilinks-headerurl": "مسار",
 	"bs-interwikilinks-titleaddinterwikilink": "أضف وصلة إنترويكي",
 	"bs-interwikilinks-titleeditinterwikilink": "تحرير وصلة الإنترويكي",
 	"bs-interwikilinks-labelprefix": "البادئة",
+	"bs-interwikilinks-labelurl": "مسار",
 	"bs-interwikilinks-titledeleteinterwikilink": "حذف وصلة الإنترويكي",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "هل أنت متأكد أنك تريد حذف وصلة الإنترويكي هذه؟",
 	"bs-interwikilinks-insertlink-tabtitle": "رابط إلى ويكي آخر",
