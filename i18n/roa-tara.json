@@ -10,5 +10,8 @@
 	"bs-interwikilinks-titleeditinterwikilink": "Cange 'nu collegamende interuicchi",
 	"bs-interwikilinks-labelprefix": "Prefisse",
 	"bs-interwikilinks-titledeleteinterwikilink": "Scangìlle 'nu collegamende interuicchi",
-	"bs-interwikilinks-insertlink-labelprefix": "Prefisse"
+	"bs-interwikilinks-insertlink-labelprefix": "Prefisse",
+	"action-interwikilinks-viewspecialpage": "'ndruche 'a pàgena speciale \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Collegaminde inderuicchi",
+	"right-interwikilinks-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:InterWikiLinks]]"
 }
