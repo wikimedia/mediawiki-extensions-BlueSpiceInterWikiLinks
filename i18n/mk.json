@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-interwikilinks-desc": "Раководен посредник за додавање, измена и бришење на меѓујазични врски",
@@ -29,5 +30,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "Ги дава задачите за додатокот „Меѓујазични врски“.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Ги дава задачите за додатокот „Меѓујазични врски“.",
 	"action-interwikilinks-viewspecialpage": "преглед на службената страница „{{int:bs-interwikilinks-label}}“",
-	"interwikilinks": "Меѓујазични врски"
+	"interwikilinks": "Меѓујазични врски",
+	"right-interwikilinks-viewspecialpage": "Пристап до службената страница [[Special:InterWikiLinks]]"
 }
