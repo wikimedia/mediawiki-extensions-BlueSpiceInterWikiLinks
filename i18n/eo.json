@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"bs-interwikilinks-headerprefix": "Prefikso",
+	"bs-interwikilinks-labelprefix": "Prefikso",
+	"bs-interwikilinks-insertlink-labelprefix": "Prefikso",
+	"bs-interwikilink-select-a-prefix": "Elekti prefikson",
+	"interwikilinks": "Intervikiaj ligiloj"
+}
