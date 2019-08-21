@@ -6,7 +6,8 @@
 			"Striking Blue",
 			"Kaganer",
 			"Mouse21",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"bs-interwikilinks-desc": "Административный интерфейс для добавления, правки и удаления ссылок интервики",
@@ -35,5 +36,5 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Предоставляет задачи для расширения InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "просмотреть специальную страницу \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Интервики-ссылки",
-	"right-interwikilinks-viewspecialpage": "доступ к служебной странице [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "доступ к служебной странице [[Special:InterWikiLinks]]"
 }
