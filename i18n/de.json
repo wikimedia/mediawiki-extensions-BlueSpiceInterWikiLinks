@@ -33,5 +33,5 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Stellt die Aufgaben für die Erweiterung „InterWikiLinks“ bereit.",
 	"action-interwikilinks-viewspecialpage": "die Spezialseite „{{int:bs-interwikilinks-label}}“ anzusehen",
 	"interwikilinks": "Interwikilinks",
-	"right-interwikilinks-viewspecialpage": "Zugriff auf die Spezialseite [[Special:InterWikiLinks]] gewähren."
+	"right-interwikilinks-viewspecialpage": "Zugriff auf die Spezialseite [[Special:InterWikiLinks]]"
 }

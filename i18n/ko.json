@@ -22,5 +22,15 @@
 	"bs-interwikilinks-insertlink-labelprefix": "접두어",
 	"bs-interwikilinks-link-edited": "인터위키 링크가 편집되었습니다.",
 	"action-interwikilinks-viewspecialpage": "특수문서 \"{{int:bs-interwikilinks-label}}\" 보기",
-	"interwikilinks": "인터위키 링크"
+	"interwikilinks": "인터위키 링크",
+	"bs-interwikilinks-desc": "인터위키 링크의 추가, 편집, 삭제를 위한 관리 인터페이스",
+	"bs-interwikilinks-invalid-pfx-spc": "접두어가 유효하지 않습니다. 공백을 사용하지 말아 주십시오.",
+	"bs-interwikilinks-invalid-url-spc": "URL이 유효하지 않습니다. 공백을 사용하지 말아 주십시오.",
+	"bs-interwikilinks-nooldpfx": "이전 접두어를 찾지 못했습니다.",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "이 인터위키 링크를 정말 삭제하시겠습니까?",
+	"bs-interwikilinks-insertlink-tabtitle": "다른 위키로 연결",
+	"bs-interwikilink-select-a-prefix": "접두어 선택",
+	"apihelp-bs-interwikilinks-tasks-description": "확장 기능 InterWikiLinks의 태스크를 제공합니다.",
+	"apihelp-bs-interwikilinks-tasks-summary": "확장 기능 InterWikiLinks의 태스크를 제공합니다.",
+	"right-interwikilinks-viewspecialpage": "[[Special:InterWikiLinks]] 특수 문서로 접근"
 }

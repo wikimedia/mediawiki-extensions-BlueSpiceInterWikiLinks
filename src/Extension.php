@@ -26,32 +26,33 @@
  * @package    BlueSpice_Extensions
  * @subpackage InterWikiLinks
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+namespace BlueSpice\InterWikiLinks;
 
-/**
- * Main class for InterWikiLinks extension
- * @package BlueSpice_Extensions
- * @subpackage InterWikiLinks
- */
-class InterWikiLinks extends BsExtensionMW {
+use Title;
 
-	protected function initExt() {}
+class Extension extends \BlueSpice\Extension {
 
-	public static function purgeTitles($iw_prefix) {
+	/**
+	 *
+	 * @param string $iwPrefix
+	 */
+		public static function purgeTitles( $iwPrefix ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'iwlinks',
-			array('iwl_from', 'iwl_prefix'),
-			array('iwl_prefix' => $iw_prefix)
+			[ 'iwl_from', 'iwl_prefix' ],
+			[ 'iwl_prefix' => $iwPrefix ]
 		);
 
-		foreach( $res as $row ) {
-			$oTitle = Title::newFromID( $row->iwl_from );
-			if( $oTitle instanceof Title == false ) continue;
-			$oTitle->invalidateCache();
+		foreach ( $res as $row ) {
+			$title = Title::newFromID( $row->iwl_from );
+			if ( $title instanceof Title == false ) {
+				continue;
+			}
+			$title->invalidateCache();
 		}
-	}
-
+	 }
 }

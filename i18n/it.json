@@ -16,5 +16,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "Fornisce le attività per l'estensione InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Fornisce le attività per l'estensione InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "Collegamenti interwiki"
+	"interwikilinks": "Collegamenti interwiki",
+	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]"
 }

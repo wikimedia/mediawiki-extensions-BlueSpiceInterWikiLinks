@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alojz.tic",
-			"Skalcaa"
+			"Skalcaa",
+			"Yerpo"
 		]
 	},
 	"bs-interwikilinks-desc": "Skrbniški vmesnik za dodajanje, urejanje in brisanje notranjih povezav wiki.",
@@ -25,5 +26,7 @@
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Ali ste prepričani, da želite izbrisati to interwiki povezavo?",
 	"bs-interwikilinks-insertlink-tabtitle": "Povezava v drug wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Predpona",
-	"bs-interwikilink-select-a-prefix": "Izberite predpono"
+	"bs-interwikilink-select-a-prefix": "Izberite predpono",
+	"bs-interwikilinks-link-edited": "Interwiki povezava je bila spremenjena",
+	"interwikilinks": "Interwiki povezave"
 }

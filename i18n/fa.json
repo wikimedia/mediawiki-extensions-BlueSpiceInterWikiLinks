@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alirezaaa",
-			"Reza1615"
+			"Reza1615",
+			"FarsiNevis"
 		]
 	},
 	"bs-interwikilinks-desc": "رابط مدیریت برای افزودن، ویرایش و حذف پیوندهای میان‌ویکی",
@@ -27,5 +28,7 @@
 	"bs-interwikilinks-confirmdeleteinterwikilink": "آیا مطمئنید، می‌خواهید این پیوند میان‌ویکی را حذف کنید؟",
 	"bs-interwikilinks-insertlink-tabtitle": "پیوند به ویکی دیگر",
 	"bs-interwikilinks-insertlink-labelprefix": "پیشوند",
-	"bs-interwikilink-select-a-prefix": "انتخاب پیشوند"
+	"bs-interwikilink-select-a-prefix": "انتخاب پیشوند",
+	"interwikilinks": "پیوندهای میان‌ویکی",
+	"right-interwikilinks-viewspecialpage": "دسترسی به صفحهٔ ویژهٔ [[Special:InterWikiLinks]]"
 }

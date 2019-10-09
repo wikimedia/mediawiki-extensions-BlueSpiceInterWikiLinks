@@ -1,17 +1,17 @@
 <?php
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases[ 'en' ] = array(
-	'InterWikiLinks' => array( 'InterWikiLinks', 'InterWiki Links' ),
-);
+$specialPageAliases[ 'en' ] = [
+	'InterWikiLinks' => [ 'InterWikiLinks', 'InterWiki Links' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases[ 'de' ] = array(
-	'InterWikiLinks' => array(
+$specialPageAliases[ 'de' ] = [
+	'InterWikiLinks' => [
 		'InterWikiLinks',
 		'InterWiki Links',
 		'Wikiübergreifende Links'
-	),
-);
+	],
+];

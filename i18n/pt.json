@@ -31,5 +31,5 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Fornece as tarefas para a extensão InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "ver página especial \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Hiperligações interwikis",
-	"right-interwikilinks-viewspecialpage": "Concede acesso à página especial [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "Acesso à página especial [[Special:InterWikiLinks]]"
 }

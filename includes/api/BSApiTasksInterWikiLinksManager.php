@@ -21,7 +21,7 @@
  * @author     Patric Wirth <wirth@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 /**
@@ -32,9 +32,10 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 
 	/**
 	 * Methods that can be called by task param
+	 * must have this name: /BlueSpiceFoundation/includes/api/BSApiTasksBase.php
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'editInterWikiLink' => [
 			'examples' => [
 				[
@@ -80,7 +81,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	/**
 	 * Returns an array of tasks and their required permissions
@@ -96,66 +97,67 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 
 	/**
 	 * Creates or edits an interwiki link.
+	 * @param stdClass $taskData
 	 * @return stdClass Standard tasks API return
 	 */
-	protected function task_editInterWikiLink( $oTaskData ) {
-		$oReturn = $this->makeStandardReturn();
+	protected function task_editInterWikiLink( $taskData ) {
+		$return = $this->makeStandardReturn();
 		$oPrefix = null;
 
-		$sOldPrefix = isset( $oTaskData->oldPrefix )
-			? (string) $oTaskData->oldPrefix
-			: ''
-		;
-		$sUrl = isset( $oTaskData->url )
-			? (string) $oTaskData->url
-			: ''
-		;
-		$sPrefix = isset( $oTaskData->prefix )
-			? (string) $oTaskData->prefix
-			: ''
-		;
+		$oldPrefix = isset( $taskData->oldPrefix )
+			? (string)$taskData->oldPrefix
+			: '';
+		$url = isset( $taskData->url )
+			? (string)$taskData->url
+			: '';
+		$prefix = isset( $taskData->prefix )
+			? (string)$taskData->prefix
+			: '';
 
-		if( !empty( $sOldPrefix ) && !$this->interWikiLinkExists( $sOldPrefix ) ) {
-			$oReturn->errors[] = [
+		if ( !empty( $oldPrefix ) && !$this->interWikiLinkExists( $oldPrefix ) ) {
+			$return->errors[] = [
 				'id' => 'iweditprefix',
 				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->plain()
 			];
-		} elseif( !empty( $sPrefix ) && $this->interWikiLinkExists( $sPrefix ) && $sPrefix !== $sOldPrefix ) {
-			$oReturn->errors[] = [
+		} elseif ( !empty( $prefix )
+			&& $this->interWikiLinkExists( $prefix )
+			&& $prefix !== $oldPrefix
+			) {
+			$return->errors[] = [
 				'id' => 'iweditprefix',
 				'message' => wfMessage( 'bs-interwikilinks-pfxexists' )->plain()
 			];
 		}
-		if( !empty( $oReturn->errors ) ) {
-			return $oReturn;
+		if ( !empty( $return->errors ) ) {
+			return $return;
 		}
 
-		if( !$oPrefix && empty( $sUrl ) ) {
-			$oReturn->errors[] = [
+		if ( !$oPrefix && empty( $url ) ) {
+			$return->errors[] = [
 				'id' => 'iwediturl',
 				'message' => wfMessage( 'bs-interwikilinks-nourl' )->plain()
 			];
 		}
-		if( !$oPrefix && empty( $sPrefix ) ) {
-			$oReturn->errors[] = [
+		if ( !$oPrefix && empty( $prefix ) ) {
+			$return->errors[] = [
 				'id' => 'iweditprefix',
 				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->plain()
 			];
 		}
-		if( !empty( $sUrl ) ) {
-			$oValidationResult = BsValidator::isValid(
+		if ( !empty( $url ) ) {
+			$validationResult = BsValidator::isValid(
 				'Url',
-				$sUrl,
+				$url,
 				[ 'fullResponse' => true ]
 				);
-			if( $oValidationResult->getErrorCode() ) {
-				$oReturn->errors[] = [
+			if ( $validationResult->getErrorCode() ) {
+				$return->errors[] = [
 					'id' => 'iwediturl',
-					'message' => $oValidationResult->getI18N()
+					'message' => $validationResult->getI18N()
 				];
 			}
-			if( strpos( $sUrl, ' ' ) ) {
-				$oReturn->errors[] = [
+			if ( strpos( $url, ' ' ) ) {
+				$return->errors[] = [
 					'id' => 'iwediturl',
 					'message' => wfMessage(
 						'bs-interwikilinks-invalid-url-spc'
@@ -163,9 +165,9 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 				];
 			}
 		}
-		if( !empty( $sPrefix ) ) {
-			if ( strlen( $sPrefix ) > 32 ) {
-				$oReturn->errors[] = [
+		if ( !empty( $prefix ) ) {
+			if ( strlen( $prefix ) > 32 ) {
+				$return->errors[] = [
 					'id' => 'iweditprefix',
 					'message' => wfMessage(
 						'bs-interwikilinks-pfxtoolong'
@@ -173,12 +175,12 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 				];
 			}
 
-			foreach( [ ' ', '"', '&', ':' ] as $sInvalidChar ) {
-				if( substr_count( $sPrefix, $sInvalidChar ) === 0 ) {
+			foreach ( [ ' ', '"', '&', ':' ] as $sInvalidChar ) {
+				if ( substr_count( $prefix, $sInvalidChar ) === 0 ) {
 					continue;
 				}
-				//TODO (PW 19.02.2016): Return the invalid char(s)
-				$oReturn->errors[] = [
+				// TODO (PW 19.02.2016): Return the invalid char(s)
+				$return->errors[] = [
 					'id' => 'iweditprefix',
 					'message' => wfMessage(
 						'bs-interwikilinks-invalid-pfx-spc'
@@ -188,99 +190,106 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			}
 		}
 
-		if( !empty( $oReturn->errors ) ) {
-			return $oReturn;
+		if ( !empty( $return->errors ) ) {
+			return $return;
 		}
 
 		$oDB = $this->getDB( DB_MASTER );
-		$sTable = 'interwiki';
-		$aConditions = [ 'iw_local' => '0' ];
-		$aValues = [
-			'iw_prefix' => $sPrefix,
-			'iw_url' => $sUrl,
+		$table = 'interwiki';
+		$conditions = [ 'iw_local' => '0' ];
+		$values = [
+			'iw_prefix' => $prefix,
+			'iw_url' => $url,
 			'iw_api' => '',
 			'iw_wikiid' => ''
 		];
 
-		if( empty( $sOldPrefix ) ) {
-			$oReturn->success = $oDB->insert(
-				$sTable,
-				array_merge( $aConditions, $aValues ),
+		if ( empty( $oldPrefix ) ) {
+			$oDB->insert(
+				$table,
+				array_merge( $conditions, $values ),
 				__METHOD__
 			);
-			$oReturn->message = wfMessage(
+			$return->success = true;
+			$return->message = wfMessage(
 				'bs-interwikilinks-link-created'
 			)->plain();
 
-			InterWikiLinks::purgeTitles( $sPrefix );
-			\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $sPrefix );
-			return $oReturn;
+			\BlueSpice\InterWikiLinks\Extension::purgeTitles( $prefix );
+			\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $prefix );
+			return $return;
 		}
 
-		$aConditions['iw_prefix'] = $sOldPrefix;
-		$oReturn->success = $oDB->update(
-			$sTable,
-			$aValues,
-			$aConditions,
+		$conditions['iw_prefix'] = $oldPrefix;
+		$oDB->update(
+			$table,
+			$values,
+			$conditions,
 			__METHOD__
 		);
-		$oReturn->message = wfMessage(
+		$return->success = true;
+		$return->message = wfMessage(
 			'bs-interwikilinks-link-edited'
 		)->plain();
 
-		InterWikiLinks::purgeTitles( $sOldPrefix );
-		\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $sOldPrefix );
+		\BlueSpice\InterWikiLinks\Extension::purgeTitles( $oldPrefix );
+		\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $oldPrefix );
 
-		return $oReturn;
+		return $return;
 	}
 
 	/**
 	 * Creates or edits an interwiki link.
+	 * @param stdClass $taskData
 	 * @return stdClass Standard tasks API return
 	 */
-	protected function task_removeInterWikiLink( $oTaskData ) {
-		$oReturn = $this->makeStandardReturn();
+	protected function task_removeInterWikiLink( $taskData ) {
+		$return = $this->makeStandardReturn();
 
-		$sPrefix = isset( $oTaskData->prefix )
-			? addslashes( $oTaskData->prefix )
-			: ''
-		;
+		$prefix = isset( $taskData->prefix )
+			? addslashes( $taskData->prefix )
+			: '';
 
-		if( empty( $sPrefix ) ) {
-			$oReturn->errors[] = [
+		if ( empty( $prefix ) ) {
+			$return->errors[] = [
 				'id' => 'iweditprefix',
 				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->plain()
 			];
-			return $oReturn;
+			return $return;
 		}
 
-		if( !$this->interWikiLinkExists( $sPrefix ) ) {
-			$oReturn->errors[] = [
+		if ( !$this->interWikiLinkExists( $prefix ) ) {
+			$return->errors[] = [
 				'id' => 'iweditprefix',
 				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->plain()
 			];
-			return $oReturn;
+			return $return;
 		}
 
-		$oReturn->success = (bool) $this->getDB( DB_MASTER )->delete(
+		$return->success = (bool)$this->getDB( DB_MASTER )->delete(
 			'interwiki',
-			[ 'iw_prefix' => $sPrefix ],
+			[ 'iw_prefix' => $prefix ],
 			__METHOD__
 		);
 
-		if( $oReturn->success ) {
-			$oReturn->message = wfMessage(
+		if ( $return->success ) {
+			$return->message = wfMessage(
 				'bs-interwikilinks-link-deleted'
 			)->plain();
 		}
 
-		//Make sure to invalidate as much as possible!
-		InterWikiLinks::purgeTitles( $sPrefix );
-		\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $sPrefix );
-		return $oReturn;
+		// Make sure to invalidate as much as possible!
+		\BlueSpice\InterWikiLinks\Extension::purgeTitles( $prefix );
+		\BlueSpice\Services::getInstance()->getInterwikiLookup()->invalidateCache( $prefix );
+		return $return;
 	}
 
-	protected function interWikiLinkExists( $sPrefix ) {
-		return \BlueSpice\Services::getInstance()->getInterwikiLookup()->isValidInterwiki( $sPrefix );
+	/**
+	 *
+	 * @param string $prefix
+	 * @return bool
+	 */
+	protected function interWikiLinkExists( $prefix ) {
+		return \BlueSpice\Services::getInstance()->getInterwikiLookup()->isValidInterwiki( $prefix );
 	}
 }

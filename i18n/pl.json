@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Railfail536",
+			"Rail"
 		]
 	},
 	"bs-interwikilinks-label": "Linki interwiki",
@@ -22,5 +24,6 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Przedrostek",
 	"bs-interwikilink-select-a-prefix": "Wybierz przedrostek",
 	"interwikilinks": "Linki interwiki",
-	"right-interwikilinks-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "Dostęp do strony specjalnej [[Special:InterWikiLinks]].",
+	"action-interwikilinks-viewspecialpage": "wyświetlania strony specjalnej „{{int:bs-interwikilinks-label}}”"
 }

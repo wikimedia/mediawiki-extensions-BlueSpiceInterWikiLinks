@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Liuxingy"
+			"Liuxingy",
+			"神樂坂秀吉",
+			"予弦"
 		]
 	},
 	"bs-interwikilinks-desc": "加入、编辑和删除跨wiki连接的管理员界面",
@@ -31,5 +33,5 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "提供用于扩展InterWikiLinks的任务。",
 	"action-interwikilinks-viewspecialpage": "查看特殊页面“{{int:bs-interwikilinks-label}}”",
 	"interwikilinks": "跨wiki连接",
-	"right-interwikilinks-viewspecialpage": "授予对特殊页的访问权限[[Special:InterWikiLinks]]。"
+	"right-interwikilinks-viewspecialpage": "访问特殊页面[[Special:InterWikiLinks]]"
 }

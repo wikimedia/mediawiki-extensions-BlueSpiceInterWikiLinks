@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceInterWikiLinks",
 	"license-name": "GPL-3.0-only",
-	"version": "3.0.1",
+	"version": "3.1.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:InterWikiLinks",
 	"author": [
 		"Markus Glaser",
@@ -11,16 +11,16 @@
 	"descriptionmsg": "bs-interwikilinks-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.31.0",
+		"MediaWiki": "~1.31",
 		"extensions": {
-			"BlueSpiceFoundation": "*"
+			"BlueSpiceFoundation": "~3.1"
 		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceInterWikiLinks": {
-					"className": "InterWikiLinks",
+					"className": "\\BlueSpice\\InterWikiLinks\\Extension",
 					"extPath": "/BlueSpiceInterWikiLinks"
 				}
 			},
@@ -68,9 +68,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"InterWikiLinks": "InterWikiLinks.class.php",
 		"BSApiTasksInterWikiLinksManager": "includes/api/BSApiTasksInterWikiLinksManager.php",
-		"SpecialInterWikiLinks": "includes/specials/SpecialInterWikiLinks.class.php"
+		"SpecialInterWikiLinks": "includes/specials/SpecialInterWikiLinks.php"
 	},
 	"ExtensionMessagesFiles": {
 		"InterWikiLinksAlias": "includes/specials/SpecialInterWikiLinks.alias.php"

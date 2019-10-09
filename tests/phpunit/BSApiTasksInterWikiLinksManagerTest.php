@@ -18,21 +18,21 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		$this->tablesUsed[] = 'interwiki';
 	}
 
-	protected function getModuleName( ) {
+	protected function getModuleName() {
 		return 'bs-interwikilinks-tasks';
 	}
 
 	public function testCreateInterWikiLink() {
-		$oCreateData = $this->executeTask(
+		$createData = $this->executeTask(
 			'editInterWikiLink',
-			array(
+			[
 				'prefix' => 'dummylink',
 				'url' => 'http://some.wiki.com/$1'
-			)
+			]
 		);
 
 		$this->assertTrue(
-			$oCreateData->success,
+			$createData->success,
 			"The interwiki link could not be created."
 		);
 		$this->assertTrue(
@@ -46,17 +46,17 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	}
 
 	public function testEditInterWikiLink() {
-		$oEditData = $this->executeTask(
+		$editData = $this->executeTask(
 			'editInterWikiLink',
-			array(
+			[
 				'oldPrefix' => 'dummylink',
 				'prefix' => 'fauxlink',
 				'url' => 'http://some.wiki.com/wiki/$1'
-			)
+			]
 		);
 
 		$this->assertTrue(
-			$oEditData->success,
+			$editData->success,
 			"The interwiki link could not be edited."
 		);
 		$this->assertTrue(
@@ -74,15 +74,15 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	}
 
 	public function testRemoveInterWikiLink() {
-		$oDeleteData = $this->executeTask(
+		$deleteData = $this->executeTask(
 			'removeInterWikiLink',
-			array(
+			[
 				'prefix' => 'fauxlink'
-			)
+			]
 		);
 
 		$this->assertTrue(
-			$oDeleteData->success,
+			$deleteData->success,
 			"The interwiki link could not be deleted"
 		);
 		$this->assertTrue(
@@ -94,8 +94,8 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	protected function isDeleted( $sValue ) {
 		$res = $this->db->select(
 			'interwiki',
-			array( 'iw_prefix' ),
-			array( 'iw_prefix' => $sValue ),
+			[ 'iw_prefix' ],
+			[ 'iw_prefix' => $sValue ],
 			wfGetCaller()
 		);
 		return ( $res->numRows() === 0 ) ? true : false;
@@ -104,11 +104,11 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	protected function existsWithValue( $prefix, $value ) {
 		$res = $this->db->select(
 			'interwiki',
-			array( 'iw_prefix', 'iw_url' ),
-			array(
+			[ 'iw_prefix', 'iw_url' ],
+			[
 				'iw_prefix' => $prefix,
 				'iw_url' => $value
-			),
+			],
 			wfGetCaller()
 		);
 		return ( $res->numRows() > 0 ) ? true : false;
