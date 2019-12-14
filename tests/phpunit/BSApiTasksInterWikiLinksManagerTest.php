@@ -20,10 +20,17 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		$this->tablesUsed[] = 'interwiki';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-interwikilinks-tasks';
 	}
 
+	/**
+	 * @covers \BSApiTasksInterWikiLinksManager::task_editInterWikiLink
+	 */
 	public function testCreateInterWikiLink() {
 		$createData = $this->executeTask(
 			'editInterWikiLink',
@@ -47,6 +54,9 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		$this->clearCache();
 	}
 
+	/**
+	 * @covers \BSApiTasksInterWikiLinksManager::task_editInterWikiLink
+	 */
 	public function testEditInterWikiLink() {
 		$editData = $this->executeTask(
 			'editInterWikiLink',
@@ -75,6 +85,9 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 		$this->clearCache();
 	}
 
+	/**
+	 * @covers \BSApiTasksInterWikiLinksManager::task_removeInterWikiLink
+	 */
 	public function testRemoveInterWikiLink() {
 		$deleteData = $this->executeTask(
 			'removeInterWikiLink',
