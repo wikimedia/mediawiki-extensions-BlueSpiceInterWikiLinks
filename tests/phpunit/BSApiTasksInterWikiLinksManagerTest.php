@@ -1,8 +1,7 @@
 <?php
 
-use BlueSpice\Tests\BSApiTasksTestBase;
-
 use BlueSpice\Services;
+use BlueSpice\Tests\BSApiTasksTestBase;
 
 /**
  * @group Broken
