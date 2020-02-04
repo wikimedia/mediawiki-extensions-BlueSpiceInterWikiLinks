@@ -28,5 +28,6 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Voorvoegsel",
 	"bs-interwikilink-select-a-prefix": "Kies voorvoegsel",
 	"interwikilinks": "Interwikilinks",
-	"right-interwikilinks-viewspecialpage": "Toegang hebben tot de speciale pagina [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Toegang hebben tot de speciale pagina [[Special:InterWikiLinks]]",
+	"action-interwikilinks-viewspecialpage": "de speciale pagina \"{{int:bs-interwikilinks-label}}\" te bekijken"
 }
