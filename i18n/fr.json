@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p",
+			"Thibaut120094"
 		]
 	},
 	"bs-interwikilinks-desc": "Interface d’administration pour ajouter, modifier et supprimer les liens interwikis",
-	"bs-interwikilinks-invalid-pfx-spc": "Le préfixe n’est pas valide. Veuillez ne pas utiliser d’espaces.",
-	"bs-interwikilinks-invalid-url-spc": "L’URL n’est pas valide. Veuillez ne pas utiliser d’espaces.",
+	"bs-interwikilinks-invalid-pfx-spc": "Le préfixe n’est pas valide. Veuillez n’utiliser aucune espace.",
+	"bs-interwikilinks-invalid-url-spc": "L’URL n’est pas valide. Veuillez n’utiliser aucune espace.",
 	"bs-interwikilinks-label": "Liens interwiki",
 	"bs-interwikilinks-link-created": "Le lien interwiki a été créé.",
 	"bs-interwikilinks-link-added": "Le lien interwiki a été ajouté.",
@@ -22,14 +24,14 @@
 	"bs-interwikilinks-titleeditinterwikilink": "Modifier un lien interwiki",
 	"bs-interwikilinks-labelprefix": "Préfixe",
 	"bs-interwikilinks-titledeleteinterwikilink": "Supprimer un lien interwiki",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "Êtes-vous sûr de vouloir supprimer ce lien interwiki ?",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer ce lien interwiki ?",
 	"bs-interwikilinks-insertlink-tabtitle": "Lien vers un autre wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Préfixe",
 	"bs-interwikilink-select-a-prefix": "Choisir un préfixe",
 	"bs-interwikilinks-link-edited": "Le lien interwiki a été modifié",
 	"apihelp-bs-interwikilinks-tasks-description": "Fournit les tâches pour l’extension InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Fournit les tâches pour l’extension InterWikiLinks.",
-	"action-interwikilinks-viewspecialpage": "afficher la page spéciale \"{{int:bs-interwikilinks-label}}\"",
+	"action-interwikilinks-viewspecialpage": "afficher la page spéciale « {{int:bs-interwikilinks-label}} »",
 	"interwikilinks": "Liens interwiki",
 	"right-interwikilinks-viewspecialpage": "Accéder à la page spéciale [[Special:InterWikiLinks]]"
 }
