@@ -2,17 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Les Meloures"
+			"Les Meloures",
+			"Soued031"
 		]
 	},
-	"bs-interwikilinks-invalid-pfx-spc": "De Prefix ass net valabel. Benotzt w.e.g. keng Espacen.",
-	"bs-interwikilinks-invalid-url-spc": "D'URL ass net valabel. Benotzt w.e.g. keng Espacen.",
+	"bs-interwikilinks-invalid-pfx-spc": "De Prefix ass net valabel. Benotzt wgl. keng Espacen.",
+	"bs-interwikilinks-invalid-url-spc": "D'URL ass net valabel. Benotzt wgl. keng Espacen.",
 	"bs-interwikilinks-label": "Interwiki-Linken",
 	"bs-interwikilinks-link-created": "Den Interwiki-Link gouf ugeluecht.",
 	"bs-interwikilinks-link-added": "Den Interwiki-Link gouf dobäigesat.",
 	"bs-interwikilinks-link-deleted": "Den Interwiki-Link gouf geläscht.",
 	"bs-interwikilinks-nooldpfx": "De virege Prefix gouf net fonnt.",
-	"bs-interwikilinks-nourl": "Gitt w.e.g. eng URL un.",
+	"bs-interwikilinks-nourl": "Gitt wgl. eng URL un.",
 	"bs-interwikilinks-pfxexists": "Dëse Prefix gëtt et schonn.",
 	"bs-interwikilinks-headerprefix": "Prefix",
 	"bs-interwikilinks-titleaddinterwikilink": "Interwiki-Link derbäisetzen",
