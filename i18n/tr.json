@@ -6,10 +6,10 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"bs-interwikilinks-desc": "Interwiki bağlantıları eklemek, düzenlemek ve silmek için yönetim arayüzü",
+	"bs-interwikilinks-desc": "Vikiarası bağlantıları eklemek, düzenlemek ve silmek için yönetim arayüzü",
 	"bs-interwikilinks-invalid-pfx-spc": "Önek geçersiz. Lütfen boşluk kullanmayın.",
 	"bs-interwikilinks-invalid-url-spc": "URL geçersiz. Lütfen boşluk kullanmayın.",
-	"bs-interwikilinks-label": "Vikiler arası bağlantılar",
+	"bs-interwikilinks-label": "Vikiarası bağlantılar",
 	"bs-interwikilinks-link-created": "Vikiarası bağlantısı oluşturuldu.",
 	"bs-interwikilinks-link-added": "Vikiarası bağlantısı eklendi.",
 	"bs-interwikilinks-link-deleted": "Vikiarası bağlantısı silindi.",
@@ -26,13 +26,13 @@
 	"bs-interwikilinks-labelurl": "URL",
 	"bs-interwikilinks-titledeleteinterwikilink": "Vikiarası bağlantısı sil",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Bu vikiarası bağlantısını silmek istediğinizden emin misiniz?",
-	"bs-interwikilinks-insertlink-tabtitle": "Başka bir wikiye bağla",
+	"bs-interwikilinks-insertlink-tabtitle": "Başka bir vikiye bağla",
 	"bs-interwikilinks-insertlink-labelprefix": "Önek",
 	"bs-interwikilink-select-a-prefix": "Önek seç",
-	"bs-interwikilinks-link-edited": "Interwiki bağlantısı düzenlendi",
-	"apihelp-bs-interwikilinks-tasks-description": "InterWikiLinklerinin uzantılar için görevler sağlar.",
+	"bs-interwikilinks-link-edited": "Vikiarası bağlantısı düzenlendi",
+	"apihelp-bs-interwikilinks-tasks-description": "InterWikiLinks uzantılar için görevler sağlar.",
 	"apihelp-bs-interwikilinks-tasks-summary": "InterWikiLinks uzantısı için görevler sağlar.",
-	"action-interwikilinks-viewspecialpage": "özel sayfayı görüntüle \"{{int:bs-interwikilinks-label}}\"",
+	"action-interwikilinks-viewspecialpage": "\"{{int:bs-interwikilinks-label}}\" özel sayfayı görüntüle",
 	"interwikilinks": "Vikiarası bağlantılar",
-	"right-interwikilinks-viewspecialpage": "Özel sayfaya erişim [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "[[Special:InterWikiLinks]] özel sayfaya erişin"
 }
