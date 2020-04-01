@@ -3,7 +3,8 @@
 		"authors": [
 			"Jopparn",
 			"Josve05a",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Technic2"
 		]
 	},
 	"bs-interwikilinks-desc": "Administrationsgränssnittet för att lägga till, redigera och ta bort interwikilänkar",
@@ -30,5 +31,5 @@
 	"bs-interwikilinks-link-edited": "Interwikilänken har redigerats",
 	"action-interwikilinks-viewspecialpage": "visa specialsidan \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Interwiki-länkar",
-	"right-interwikilinks-viewspecialpage": "Ger åtkomst till specialsidan [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "Åtkomst till specialsidan [[Special:InterWikiLinks]]."
 }
