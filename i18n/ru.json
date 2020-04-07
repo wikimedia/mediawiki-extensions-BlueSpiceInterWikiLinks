@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kaganer",
 			"Meshkov.a",
+			"Mouse21",
+			"Movses",
 			"Okras",
 			"Striking Blue",
-			"Kaganer",
-			"Mouse21",
-			"Vlad5250",
-			"Movses"
+			"Vlad5250"
 		]
 	},
 	"bs-interwikilinks-desc": "Административный интерфейс для добавления, правки и удаления ссылок интервики",
