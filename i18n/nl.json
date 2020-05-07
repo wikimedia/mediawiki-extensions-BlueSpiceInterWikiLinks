@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"bs-interwikilinks-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van interwiki-links",
