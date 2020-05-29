@@ -39,7 +39,7 @@ class Extension extends \BlueSpice\Extension {
 	 *
 	 * @param string $iwPrefix
 	 */
-		public static function purgeTitles( $iwPrefix ) {
+	public static function purgeTitles( $iwPrefix ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'iwlinks',
@@ -54,5 +54,5 @@ class Extension extends \BlueSpice\Extension {
 			}
 			$title->invalidateCache();
 		}
-	 }
+	}
 }
