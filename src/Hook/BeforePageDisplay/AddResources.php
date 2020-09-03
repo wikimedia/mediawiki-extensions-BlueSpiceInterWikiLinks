@@ -2,7 +2,7 @@
 
 namespace BlueSpice\InterWikiLinks\Hook\BeforePageDisplay;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
@@ -11,7 +11,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 	 * @return bool
 	 */
 	protected function doProcess() {
-		$interwikiLookup = Services::getInstance()->getInterwikiLookup();
+		$interwikiLookup = MediaWikiServices::getInstance()->getInterwikiLookup();
 		$interwikiLinks = [];
 		foreach ( $interwikiLookup->getAllPrefixes() as $entry ) {
 			$interwikiLinks[] = $entry['iw_prefix'];
