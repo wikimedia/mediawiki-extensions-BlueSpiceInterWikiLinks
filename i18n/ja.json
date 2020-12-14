@@ -23,7 +23,7 @@
 	"bs-interwikilinks-labelprefix": "接頭辞",
 	"bs-interwikilinks-titledeleteinterwikilink": "ウィキ間リンクの削除",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "このウィキ間リンクを本当に削除しますか?",
-	"bs-interwikilinks-insertlink-tabtitle": "他のWikiへのリンク",
+	"bs-interwikilinks-insertlink-tabtitle": "別のウィキへのリンク",
 	"bs-interwikilinks-insertlink-labelprefix": "接頭辞",
 	"bs-interwikilink-select-a-prefix": "接頭辞を選択",
 	"action-interwikilinks-viewspecialpage": "特別ページ「{{int:bs-interwikilinks-label}}」の閲覧",
