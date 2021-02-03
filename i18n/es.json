@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"AVIADOR",
 			"Fitoschido",
-			"Macofe",
-			"AVIADOR"
+			"Macofe"
 		]
 	},
 	"bs-interwikilinks-desc": "Interfaz administrativa para añadir, editar y eliminar enlaces interwikis",

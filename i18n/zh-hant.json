@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"Kly"
+			"Kly",
+			"Liuxinyu970226"
 		]
 	},
 	"bs-interwikilinks-desc": "用於添加、編輯，以及刪除跨 wiki 連結的管理者介面",
