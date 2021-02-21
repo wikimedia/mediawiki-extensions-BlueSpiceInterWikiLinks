@@ -54,7 +54,7 @@
 		"interwikilinks-viewspecialpage"
 	],
 	"AutoloadNamespaces": {
-		"BlueSpice\\InterWikiLinks\\" : "src/"
+		"BlueSpice\\InterWikiLinks\\": "src/"
 	},
 	"SpecialPages": {
 		"InterWikiLinks": "SpecialInterWikiLinks"
