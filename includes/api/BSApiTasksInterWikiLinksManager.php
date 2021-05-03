@@ -196,7 +196,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			return $return;
 		}
 
-		$oDB = $this->getDB( DB_MASTER );
+		$oDB = $this->getDB( DB_PRIMARY );
 		$table = 'interwiki';
 		$conditions = [ 'iw_local' => '0' ];
 		$values = [
@@ -268,7 +268,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			return $return;
 		}
 
-		$return->success = (bool)$this->getDB( DB_MASTER )->delete(
+		$return->success = (bool)$this->getDB( DB_PRIMARY )->delete(
 			'interwiki',
 			[ 'iw_prefix' => $prefix ],
 			__METHOD__
