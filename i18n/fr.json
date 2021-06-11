@@ -24,14 +24,16 @@
 	"bs-interwikilinks-titleeditinterwikilink": "Modifier un lien interwiki",
 	"bs-interwikilinks-labelprefix": "Préfixe",
 	"bs-interwikilinks-titledeleteinterwikilink": "Supprimer un lien interwiki",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer ce lien interwiki ?",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer ce lien interwiki ?",
 	"bs-interwikilinks-insertlink-tabtitle": "Lien vers un autre wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Préfixe",
 	"bs-interwikilink-select-a-prefix": "Choisir un préfixe",
 	"bs-interwikilinks-link-edited": "Le lien interwiki a été modifié",
 	"apihelp-bs-interwikilinks-tasks-description": "Fournit les tâches pour l’extension InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Fournit les tâches pour l’extension InterWikiLinks.",
-	"action-interwikilinks-viewspecialpage": "afficher la page spéciale « {{int:bs-interwikilinks-label}} »",
+	"action-interwikilinks-viewspecialpage": "afficher la page spéciale « {{int:bs-interwikilinks-label}} »",
 	"interwikilinks": "Liens interwiki",
-	"right-interwikilinks-viewspecialpage": "Accéder à la page spéciale [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Accéder à la page spéciale [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-headerurl": "URL",
+	"bs-interwikilinks-labelurl": "URL"
 }
