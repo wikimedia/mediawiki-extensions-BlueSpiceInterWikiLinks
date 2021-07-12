@@ -3,10 +3,11 @@
 		"authors": [
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"Siebrand"
 		]
 	},
-	"bs-interwikilinks-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van interwiki-links",
+	"bs-interwikilinks-desc": "Beheerinterface voor het toevoegen, bewerken en verwijderen van interwiki-koppelingen",
 	"bs-interwikilinks-invalid-pfx-spc": "Het voorvoegsel is ongeldig. Gebruik geen spaties.",
 	"bs-interwikilinks-invalid-url-spc": "De URL is ongeldig. Gebruik geen spaties.",
 	"bs-interwikilinks-label": "Interwikilinks",
