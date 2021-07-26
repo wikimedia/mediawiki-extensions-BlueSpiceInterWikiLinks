@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -16,7 +17,7 @@
 	"bs-interwikilinks-nooldpfx": "Попередній префікс не знайдено.",
 	"bs-interwikilinks-nopfx": "Будь ласка, поставте префікс.",
 	"bs-interwikilinks-nourl": "Будь ласка, вкажіть URL-адресу.",
-	"bs-interwikilinks-pfxtoolong": "Префікс надто довгий. Будь ласка, використайте не більше 32-х символів.",
+	"bs-interwikilinks-pfxtoolong": "Префікс задовгий. Будь ласка, використайте не більше 32-х символів.",
 	"bs-interwikilinks-pfxexists": "Цей префікс уже існує.",
 	"bs-interwikilinks-headerprefix": "Префікс",
 	"bs-interwikilinks-titleaddinterwikilink": "Додати інтервікі-посилання",
