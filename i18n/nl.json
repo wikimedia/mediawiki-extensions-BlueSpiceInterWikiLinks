@@ -30,6 +30,8 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Voorvoegsel",
 	"bs-interwikilink-select-a-prefix": "Kies voorvoegsel",
 	"bs-interwikilinks-link-edited": "De interwiki-link is aangepast",
+	"apihelp-bs-interwikilinks-tasks-description": "Voorziet in de taken voor de uitbreiding InterWikiLinks.",
+	"apihelp-bs-interwikilinks-tasks-summary": "Voorziet in de taken voor de uitbreiding InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "de speciale pagina \"{{int:bs-interwikilinks-label}}\" te bekijken",
 	"interwikilinks": "Interwikilinks",
 	"right-interwikilinks-viewspecialpage": "Toegang hebben tot de speciale pagina [[Special:InterWikiLinks]]"
