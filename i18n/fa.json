@@ -3,6 +3,7 @@
 		"authors": [
 			"Alirezaaa",
 			"FarsiNevis",
+			"Jeeputer",
 			"Reza1615"
 		]
 	},
@@ -29,6 +30,7 @@
 	"bs-interwikilinks-insertlink-tabtitle": "پیوند به ویکی دیگر",
 	"bs-interwikilinks-insertlink-labelprefix": "پیشوند",
 	"bs-interwikilink-select-a-prefix": "انتخاب پیشوند",
+	"bs-interwikilinks-link-edited": "پیوند میان‌ویکی ویرایش شده‌است",
 	"interwikilinks": "پیوندهای میان‌ویکی",
 	"right-interwikilinks-viewspecialpage": "دسترسی به صفحهٔ ویژهٔ [[Special:InterWikiLinks]]"
 }
