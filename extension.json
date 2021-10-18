@@ -105,13 +105,13 @@
 		"remoteExtPath": "BlueSpiceInterWikiLinks/resources"
 	},
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\InterWikiLinks\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\InterWikiLinks\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\InterWikiLinks\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
