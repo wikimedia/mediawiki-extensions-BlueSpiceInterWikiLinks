@@ -3,7 +3,8 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Ankabel",
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
 	"bs-interwikilinks-invalid-url-spc": "L'URL non è valido. Si prega di non utilizzare spazi.",
@@ -19,5 +20,7 @@
 	"action-interwikilinks-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Collegamenti interwiki",
 	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]",
-	"bs-interwikilinks-label": "Collegamenti interwiki"
+	"bs-interwikilinks-label": "Collegamenti interwiki",
+	"bs-interwikilinks-nourl": "Fornire un URL",
+	"bs-interwikilink-select-a-prefix": "Scegli prefisso"
 }
