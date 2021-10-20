@@ -33,5 +33,7 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Забезпечує завдання для розширення InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "перегляд спеціальної сторінки «{{int:bs-interwikilinks-label}}»",
 	"interwikilinks": "Інтервікі-посилання",
-	"right-interwikilinks-viewspecialpage": "Доступ до спеціальної сторінки [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Доступ до спеціальної сторінки [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-headerurl": "URL",
+	"bs-interwikilinks-labelurl": "URL"
 }

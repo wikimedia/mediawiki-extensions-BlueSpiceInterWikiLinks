@@ -25,5 +25,10 @@
 	"bs-interwikilinks-insertlink-tabtitle": "Ligamine verso un altere wiki",
 	"bs-interwikilinks-insertlink-labelprefix": "Prefixo",
 	"bs-interwikilink-select-a-prefix": "Selige prefixo",
-	"bs-interwikilinks-link-edited": "Le ligamine interwiki ha essite modificate."
+	"bs-interwikilinks-link-edited": "Le ligamine interwiki ha essite modificate.",
+	"apihelp-bs-interwikilinks-tasks-description": "Forni le actiones pro le extension InterWikiLinks.",
+	"apihelp-bs-interwikilinks-tasks-summary": "Forni le actiones pro le extension InterWikiLinks.",
+	"action-interwikilinks-viewspecialpage": "vider le pagina special \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Ligamines interwiki",
+	"right-interwikilinks-viewspecialpage": "Accesso al pagina special [[Special:InterWikiLinks]]"
 }
