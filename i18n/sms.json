@@ -4,5 +4,7 @@
 			"Yupik"
 		]
 	},
-	"action-interwikilinks-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-interwikilinks-label}}\""
+	"bs-interwikilinks-label": "Interwiki-liiŋk",
+	"action-interwikilinks-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Interwiki-liiŋk"
 }
