@@ -5,6 +5,9 @@
 		]
 	},
 	"bs-interwikilinks-label": "Interwiki-liiŋk",
+	"bs-interwikilinks-titleaddinterwikilink": "Lââʹzzet interwiki-liiŋk",
+	"bs-interwikilinks-titleeditinterwikilink": "Muuʹtt interwiki-liiŋk",
+	"bs-interwikilinks-titledeleteinterwikilink": "Jaukkâd interwiki-liiŋk",
 	"action-interwikilinks-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Interwiki-liiŋk"
 }
