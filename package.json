@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpiceInterWikiLinks",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
