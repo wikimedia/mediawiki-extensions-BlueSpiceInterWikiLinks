@@ -6,6 +6,7 @@
 			"Mouse21",
 			"Movses",
 			"Okras",
+			"Pacha Tchernof",
 			"Striking Blue",
 			"Vlad5250"
 		]
@@ -14,9 +15,9 @@
 	"bs-interwikilinks-invalid-pfx-spc": "Некорректный префикс. Пожалуйста, не используйте пробелы.",
 	"bs-interwikilinks-invalid-url-spc": "Некорректный URL. Пожалуйста, не используйте пробелы.",
 	"bs-interwikilinks-label": "Интервики-ссылки",
-	"bs-interwikilinks-link-created": "Была создана ссылка интервики.",
-	"bs-interwikilinks-link-added": "Ссылка интервики была добавлена.",
-	"bs-interwikilinks-link-deleted": "Ссылка интервики была удалена.",
+	"bs-interwikilinks-link-created": "Интервики-ссылка была создана.",
+	"bs-interwikilinks-link-added": "Интервики-ссылка была добавлена.",
+	"bs-interwikilinks-link-deleted": "Интервики-ссылка была удалена.",
 	"bs-interwikilinks-nooldpfx": "Предыдущий префикс не был найден.",
 	"bs-interwikilinks-nopfx": "Пожалуйста, укажите префикс.",
 	"bs-interwikilinks-nourl": "Пожалуйста, укажите URL.",
