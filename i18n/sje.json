@@ -6,5 +6,6 @@
 	},
 	"bs-interwikilinks-label": "Wikigasskajliŋka",
 	"bs-interwikilinks-titledeleteinterwikilink": "Gádoda wikigasskajliŋkav",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "Lä dån visses dån sida dáv wikigasskajliŋkav gádodit?"
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Lä dån visses dån sida dáv wikigasskajliŋkav gádodit?",
+	"action-interwikilinks-viewspecialpage": "vuosedä särrabielev \"{{int:bs-interwikilinks-label}}\""
 }
