@@ -24,8 +24,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
-use MediaWiki\MediaWikiServices;
-
 /**
  * InterWikiLinksManager Api class
  * @package BlueSpice_Extensions
@@ -218,7 +216,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			)->plain();
 
 			\BlueSpice\InterWikiLinks\Extension::purgeTitles( $prefix );
-			MediaWikiServices::getInstance()->getInterwikiLookup()->invalidateCache( $prefix );
+			$this->services->getInterwikiLookup()->invalidateCache( $prefix );
 			return $return;
 		}
 
@@ -235,7 +233,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		)->plain();
 
 		\BlueSpice\InterWikiLinks\Extension::purgeTitles( $oldPrefix );
-		MediaWikiServices::getInstance()->getInterwikiLookup()->invalidateCache( $oldPrefix );
+		$this->services->getInterwikiLookup()->invalidateCache( $oldPrefix );
 
 		return $return;
 	}
@@ -282,7 +280,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 
 		// Make sure to invalidate as much as possible!
 		\BlueSpice\InterWikiLinks\Extension::purgeTitles( $prefix );
-		MediaWikiServices::getInstance()->getInterwikiLookup()->invalidateCache( $prefix );
+		$this->services->getInterwikiLookup()->invalidateCache( $prefix );
 		return $return;
 	}
 
@@ -292,6 +290,6 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 	 * @return bool
 	 */
 	protected function interWikiLinkExists( $prefix ) {
-		return MediaWikiServices::getInstance()->getInterwikiLookup()->isValidInterwiki( $prefix );
+		return $this->services->getInterwikiLookup()->isValidInterwiki( $prefix );
 	}
 }
