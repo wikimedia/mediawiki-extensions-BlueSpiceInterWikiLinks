@@ -29,5 +29,7 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Predpona",
 	"bs-interwikilink-select-a-prefix": "Izberite predpono",
 	"bs-interwikilinks-link-edited": "Interwiki povezava je bila spremenjena",
-	"interwikilinks": "Interwiki povezave"
+	"interwikilinks": "Interwiki povezave",
+	"bs-interwikilinks-headerurl": "URL",
+	"bs-interwikilinks-labelurl": "URL"
 }
