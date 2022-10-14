@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2"
 		]
 	},
@@ -31,5 +32,6 @@
 	"apihelp-bs-interwikilinks-tasks-description": "אספקת המשימות עבור ההרחבה InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "אספקת המשימות עבור ההרחבה InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "לצפות בדף המיוחד \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "קישורי בינוויקי"
+	"interwikilinks": "קישורי בינוויקי",
+	"right-interwikilinks-viewspecialpage": "גישה לדף המיוחד [[Special:InterWikiLinks]]"
 }
