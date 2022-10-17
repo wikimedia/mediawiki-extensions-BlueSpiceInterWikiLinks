@@ -4,6 +4,7 @@
 			"Ajeje Brazorf",
 			"Ankabel",
 			"Beta16",
+			"GpieroMW",
 			"Stefano"
 		]
 	},
@@ -22,5 +23,9 @@
 	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]",
 	"bs-interwikilinks-label": "Collegamenti interwiki",
 	"bs-interwikilinks-nourl": "Fornire un URL",
-	"bs-interwikilink-select-a-prefix": "Scegli prefisso"
+	"bs-interwikilink-select-a-prefix": "Scegli prefisso",
+	"bs-interwikilinks-nooldpfx": "Il prefisso precedente non è stato trovato.",
+	"bs-interwikilinks-nopfx": "Si prega di fornire un prefisso.",
+	"bs-interwikilinks-pfxtoolong": "Il prefisso è troppo lungo. Si prega di utilizzare un massimo di 32 caratteri.",
+	"bs-interwikilinks-insertlink-tabtitle": "Collegamento a un altro wiki"
 }
