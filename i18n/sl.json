@@ -31,5 +31,9 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Predpona",
 	"bs-interwikilink-select-a-prefix": "Izberite predpono",
 	"bs-interwikilinks-link-edited": "Interwiki povezava je bila spremenjena",
-	"interwikilinks": "Interwiki povezave"
+	"apihelp-bs-interwikilinks-tasks-description": "Zagotavlja opravila za razširitev InterWikiLinks.",
+	"apihelp-bs-interwikilinks-tasks-summary": "Zagotavlja opravila za razširitev InterWikiLinks.",
+	"action-interwikilinks-viewspecialpage": "ogled posebne strani »{{int:bs-interwikilinks-label}}«",
+	"interwikilinks": "Interwiki povezave",
+	"right-interwikilinks-viewspecialpage": "Dostop do posebne strani [[Special:InterWikiLinks]]"
 }
