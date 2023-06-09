@@ -7,7 +7,7 @@
 			"Yerpo"
 		]
 	},
-	"bs-interwikilinks-desc": "Skrbniški vmesnik za dodajanje, urejanje in brisanje notranjih povezav wiki.",
+	"bs-interwikilinks-desc": "Adminstratorski vmesnik za dodajanje, urejanje in brisanje povezav med vikiji.",
 	"bs-interwikilinks-invalid-pfx-spc": "Predpona je neveljavna. Prosimo, ne uporabljajte presledkov.",
 	"bs-interwikilinks-invalid-url-spc": "URL ni veljaven. Prosimo, ne uporabljajte presledkov.",
 	"bs-interwikilinks-label": "Interviki povezave",
@@ -25,7 +25,7 @@
 	"bs-interwikilinks-labelprefix": "Predpona",
 	"bs-interwikilinks-titledeleteinterwikilink": "Brisanje interwiki povezave",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Ali to interwiki povezavo res želite izbrisati?",
-	"bs-interwikilinks-insertlink-tabtitle": "Povezava v drug wiki",
+	"bs-interwikilinks-insertlink-tabtitle": "Povezava v drug viki",
 	"bs-interwikilinks-insertlink-labelprefix": "Predpona",
 	"bs-interwikilink-select-a-prefix": "Izberite predpono",
 	"bs-interwikilinks-link-edited": "Interwiki povezava je bila spremenjena",
