@@ -29,7 +29,6 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Präfix",
 	"bs-interwikilink-select-a-prefix": "Präfix auswählen",
 	"bs-interwikilinks-link-edited": "Der Interwiki-Link wurde bearbeitet",
-	"apihelp-bs-interwikilinks-tasks-description": "Bietet die Aufgaben für die Erweiterung InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Stellt die Aufgaben für die Erweiterung „InterWikiLinks“ bereit.",
 	"action-interwikilinks-viewspecialpage": "die Spezialseite „{{int:bs-interwikilinks-label}}“ anzusehen",
 	"interwikilinks": "Interwikilinks",

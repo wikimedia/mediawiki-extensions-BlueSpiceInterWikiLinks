@@ -33,7 +33,6 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Префикс",
 	"bs-interwikilink-select-a-prefix": "Выберите префикс",
 	"bs-interwikilinks-link-edited": "Ссылка interwiki была отредактирована",
-	"apihelp-bs-interwikilinks-tasks-description": "Предоставляет задачи для расширения InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "Предоставляет задачи для расширения InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "просмотреть специальную страницу \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Интервики-ссылки",

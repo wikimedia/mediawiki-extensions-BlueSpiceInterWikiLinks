@@ -29,7 +29,6 @@
 	"bs-interwikilinks-insertlink-labelprefix": "Prefijo",
 	"bs-interwikilink-select-a-prefix": "Elegir prefijo",
 	"bs-interwikilinks-link-edited": "Se ha editado el enlace interwiki.",
-	"apihelp-bs-interwikilinks-tasks-description": "Proporciona las tareas para la extensión InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "ver la página especial \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Enlaces interwikis",
 	"right-interwikilinks-viewspecialpage": "Acceso a la página especial [[Special:InterWikiLinks]]"
