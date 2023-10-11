@@ -2,7 +2,7 @@
 
 namespace BlueSpice\InterWikiLinks\HookHandler;
 
-use BlueSpice\InterWikiLinks\GlobalActionsManager;
+use BlueSpice\InterWikiLinks\GlobalActionsAdministration;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
 class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
@@ -12,11 +12,11 @@ class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 	 */
 	public function onMWStakeCommonUIRegisterSkinSlotComponents( $registry ): void {
 		$registry->register(
-			'GlobalActionsManager',
+			'GlobalActionsAdministration',
 			[
 				'special-bluespice-interwikilinks' => [
 					'factory' => static function () {
-						return new GlobalActionsManager();
+						return new GlobalActionsAdministration();
 					}
 				]
 			]
