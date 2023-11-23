@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Guycn2"
+			"Guycn2",
+			"Neriah"
 		]
 	},
 	"bs-interwikilinks-desc": "ממשק ניהולי להוספת, עריכת ומחיקת קישורי בינוויקי",
@@ -28,7 +29,7 @@
 	"bs-interwikilinks-insertlink-tabtitle": "קישור לאתר ויקי אחר",
 	"bs-interwikilinks-insertlink-labelprefix": "תחילית",
 	"bs-interwikilink-select-a-prefix": "נא לבחור תחילית",
-	"bs-interwikilinks-link-edited": "קישור הבינוויקי שוּנה",
+	"bs-interwikilinks-link-edited": "קישור הבינוויקי שונה",
 	"apihelp-bs-interwikilinks-tasks-description": "אספקת המשימות עבור ההרחבה InterWikiLinks.",
 	"apihelp-bs-interwikilinks-tasks-summary": "אספקת המשימות עבור ההרחבה InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "לצפות בדף המיוחד \"{{int:bs-interwikilinks-label}}\"",
