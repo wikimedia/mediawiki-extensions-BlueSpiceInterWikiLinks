@@ -31,5 +31,6 @@
 	"interwikilinks": "ウィキ間リンク",
 	"right-interwikilinks-viewspecialpage": "特別ページ [[Special:InterWikiLinks]] を利用",
 	"bs-interwikilinks-nooldpfx": "前のプレフィックスが見つかりませんでした。",
-	"bs-interwikilinks-link-edited": "ウィキ間リンクを編集しました。"
+	"bs-interwikilinks-link-edited": "ウィキ間リンクを編集しました。",
+	"apihelp-bs-interwikilinks-tasks-summary": "拡張機能 InterWikiLinks のタスクを提供します。"
 }
