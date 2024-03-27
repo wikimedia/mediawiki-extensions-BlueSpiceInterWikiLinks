@@ -31,6 +31,7 @@
  */
 namespace BlueSpice\InterWikiLinks;
 
+use MediaWiki\MediaWikiServices;
 use Title;
 
 class Extension extends \BlueSpice\Extension {
@@ -40,7 +41,8 @@ class Extension extends \BlueSpice\Extension {
 	 * @param string $iwPrefix
 	 */
 	public static function purgeTitles( $iwPrefix ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'iwlinks',
 			[ 'iwl_from', 'iwl_prefix' ],
