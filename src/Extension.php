@@ -32,7 +32,7 @@
 namespace BlueSpice\InterWikiLinks;
 
 use MediaWiki\MediaWikiServices;
-use Title;
+use MediaWiki\Title\Title;
 
 class Extension extends \BlueSpice\Extension {
 
