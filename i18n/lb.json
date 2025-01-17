@@ -21,9 +21,6 @@
 	"bs-interwikilinks-labelprefix": "Prefix",
 	"bs-interwikilinks-titledeleteinterwikilink": "Interwiki-Link läschen",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Sidd Dir sécher datt Dir dësen Interwiki-Link läsche wëllt?",
-	"bs-interwikilinks-insertlink-tabtitle": "Link an eng aner Wiki",
-	"bs-interwikilinks-insertlink-labelprefix": "Prefix",
-	"bs-interwikilink-select-a-prefix": "Prefix eraussichen",
 	"bs-interwikilinks-link-edited": "Den Interwiki Link gouf geännert",
 	"action-interwikilinks-viewspecialpage": "d'Spezialsäit \"{{int:bs-interwikilinks-label}}\" weisen",
 	"interwikilinks": "Interwiki-Linken"
