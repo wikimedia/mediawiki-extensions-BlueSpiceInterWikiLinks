@@ -66,7 +66,7 @@ bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.onAction = function ( act
 					dfd.resolve( { action: 'close', data: { success: true } } );
 				},
 				failure: ( response ) => {
-					dfd.reject( response.message );
+					dfd.reject( response.errors[0].message );
 				}
 			}
 		);
