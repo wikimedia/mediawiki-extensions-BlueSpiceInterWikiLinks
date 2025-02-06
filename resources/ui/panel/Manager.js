@@ -100,7 +100,11 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 
 ext.bluespice.interwikilinks.ui.panel.Manager.prototype.getToolbarActions = function () {
 	return [
-		this.getAddAction( { icon: 'add' } )
+		this.getAddAction( {
+			icon: 'add',
+			title: mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).plain(),
+			displayBothIconAndLabel: true
+		} )
 	];
 };
 
