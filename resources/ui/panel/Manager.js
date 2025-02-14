@@ -148,7 +148,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.showInterwikilinksDialog
 	} );
 
 	const result = await dialog.show().closed;
-	if ( result.success ) {
+	if ( result && result.success ) {
 		this.store.reload();
 	}
 };
