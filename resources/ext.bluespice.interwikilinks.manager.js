@@ -6,7 +6,9 @@
 			return;
 		}
 
-		const panel = new ext.bluespice.interwikilinks.ui.panel.Manager();
+		const panel = new ext.bluespice.interwikilinks.ui.panel.Manager( {
+			editable: $container.data( 'can-edit' ) === 1
+		} );
 
 		$container.append( panel.$element );
 	} );

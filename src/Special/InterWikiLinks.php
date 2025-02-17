@@ -19,6 +19,9 @@ class InterWikiLinks extends SpecialPage {
 
 		$out = $this->getOutput();
 		$out->addModules( [ 'ext.bluespice.interwikilinks.manager' ] );
-		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-interwikilinks-manager' ] ) );
+		$out->addHTML( Html::element( 'div', [
+			'id' => 'bs-interwikilinks-manager',
+			'data-can-edit' => $this->getUser()->isAllowed( 'wikiadmin' ) ? 1 : 0
+		] ) );
 	}
 }
