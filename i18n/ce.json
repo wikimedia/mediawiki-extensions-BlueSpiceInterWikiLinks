@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Исмаил Садуев",
 			"Умар"
 		]
 	},
@@ -8,7 +9,7 @@
 	"bs-interwikilinks-headerprefix": "ТӀетоьхна элпаш",
 	"bs-interwikilinks-labelprefix": "Префикс",
 	"bs-interwikilinks-titledeleteinterwikilink": "ДӀайаккха интервики-хьажорг",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "Бакъалла лаьий, хьуна хӀара интервики-хьажог дӀаййкха?",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Хьо тешна вуй хӀара интервики-хьажорг хьайна дӀайаккха лаарх?",
 	"bs-interwikilinks-insertlink-tabtitle": "Кхечу вики тӀе хьажорг",
 	"bs-interwikilinks-insertlink-labelprefix": "Префикс",
 	"bs-interwikilink-select-a-prefix": "Харжа префикс",
