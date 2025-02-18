@@ -16,7 +16,6 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	protected function setUp(): void {
 		parent::setUp();
 		$GLOBALS['wgGroupPermissions']['user']['wikiadmin'] = true;
-		$this->tablesUsed[] = 'interwiki';
 	}
 
 	/**
