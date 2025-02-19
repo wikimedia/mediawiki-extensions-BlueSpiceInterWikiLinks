@@ -48,7 +48,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				visibleOnHover: true,
 				width: 30,
 				disabled: ( row ) => {
-					return !this.editable;
+					return !this.editable || !row.editable;
 				}
 			},
 			delete: {
@@ -61,7 +61,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				visibleOnHover: true,
 				width: 30,
 				disabled: ( row ) => {
-					return !this.editable;
+					return !this.editable || !row.editable;
 				}
 			}
 		},
