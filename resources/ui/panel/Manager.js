@@ -7,11 +7,15 @@ ext.bluespice.interwikilinks.ui.panel.Manager = function ( cfg ) {
 		action: 'bs-interwiki-store',
 		pageSize: 25
 	} );
+	this.editable = cfg.editable || false;
 
 	this.gridCfg = this.setupGridConfig();
 	cfg.grid = this.gridCfg;
 
 	ext.bluespice.interwikilinks.ui.panel.Manager.parent.call( this, cfg );
+	if ( !this.editable ) {
+		this.setAbilities( [] );
+	}
 };
 
 OO.inheritClass( ext.bluespice.interwikilinks.ui.panel.Manager, OOJSPlus.ui.panel.ManagerGrid );
@@ -42,7 +46,10 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				icon: 'edit',
 				invisibleHeader: true,
 				visibleOnHover: true,
-				width: 30
+				width: 30,
+				disabled: ( row ) => {
+					return !this.editable;
+				}
 			},
 			delete: {
 				headerText: mw.message( 'oojsplus-toolbar-delete' ).text(),
@@ -52,7 +59,10 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				icon: 'trash',
 				invisibleHeader: true,
 				visibleOnHover: true,
-				width: 30
+				width: 30,
+				disabled: ( row ) => {
+					return !this.editable;
+				}
 			}
 		},
 		store: this.store,
@@ -106,6 +116,13 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.getToolbarActions = func
 			displayBothIconAndLabel: true
 		} )
 	];
+};
+
+OOJSPlus.ui.panel.ManagerGrid.prototype.getInitialAbilities = function () {
+	// Override to set abilities on load without any selection
+	return {
+		add: this.editable
+	};
 };
 
 ext.bluespice.interwikilinks.ui.panel.Manager.prototype.onAction = async function ( action, row ) {
