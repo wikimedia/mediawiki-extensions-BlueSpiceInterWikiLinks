@@ -3,9 +3,9 @@
 namespace BlueSpice\InterWikiLinks\Special;
 
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class InterWikiLinks extends SpecialPage {
+class InterWikiLinks extends OOJSGridSpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'InterWikiLinks', 'interwikilinks-viewspecialpage' );
@@ -14,9 +14,7 @@ class InterWikiLinks extends SpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
-
+	public function doExecute( $subPage ) {
 		$out = $this->getOutput();
 		$out->addModules( [ 'ext.bluespice.interwikilinks.manager' ] );
 		$out->addHTML( Html::element( 'div', [
