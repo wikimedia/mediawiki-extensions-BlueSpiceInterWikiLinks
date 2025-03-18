@@ -46,7 +46,8 @@ class Extension extends \BlueSpice\Extension {
 		$res = $dbr->select(
 			'iwlinks',
 			[ 'iwl_from', 'iwl_prefix' ],
-			[ 'iwl_prefix' => $iwPrefix ]
+			[ 'iwl_prefix' => $iwPrefix ],
+			__METHOD__
 		);
 
 		foreach ( $res as $row ) {
