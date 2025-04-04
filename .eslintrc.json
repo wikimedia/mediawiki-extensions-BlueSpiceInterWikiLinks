@@ -12,6 +12,7 @@
 		"OOJSPlus": "readonly"
 	},
 	"rules": {
+		"es-x/no-async-functions": "off",
 		"max-len": "off"
 	},
 	"parserOptions": {

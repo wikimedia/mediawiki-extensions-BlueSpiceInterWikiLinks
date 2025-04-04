@@ -47,9 +47,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				invisibleHeader: true,
 				visibleOnHover: true,
 				width: 30,
-				disabled: ( row ) => {
-					return !this.editable || !row.editable;
-				}
+				disabled: ( row ) => !this.editable || !row.editable
 			},
 			delete: {
 				headerText: mw.message( 'oojsplus-toolbar-delete' ).text(),
@@ -60,9 +58,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				invisibleHeader: true,
 				visibleOnHover: true,
 				width: 30,
-				disabled: ( row ) => {
-					return !this.editable || !row.editable;
-				}
+				disabled: ( row ) => !this.editable || !row.editable
 			}
 		},
 		store: this.store,
@@ -95,7 +91,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}
@@ -149,7 +145,9 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.onAction = async functio
 				text: mw.message( 'bs-interwikilinks-confirmdeleteinterwikilink' ).plain()
 			},
 			{
-				ok: () => { this.onRemoveIWLOk( row.iw_prefix ); }
+				ok: () => {
+					this.onRemoveIWLOk( row.iw_prefix );
+				}
 			}
 		);
 	}
