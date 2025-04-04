@@ -47,7 +47,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				invisibleHeader: true,
 				visibleOnHover: true,
 				width: 30,
-				disabled: ( row ) => !this.editable || !row.editable
+				disabled: ( row ) => !this.editable || row.editable === false
 			},
 			delete: {
 				headerText: mw.message( 'oojsplus-toolbar-delete' ).text(),
@@ -58,7 +58,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 				invisibleHeader: true,
 				visibleOnHover: true,
 				width: 30,
-				disabled: ( row ) => !this.editable || !row.editable
+				disabled: ( row ) => !this.editable || row.editable === false
 			}
 		},
 		store: this.store,
