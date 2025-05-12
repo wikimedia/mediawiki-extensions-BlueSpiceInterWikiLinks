@@ -11,16 +11,20 @@ bs.interwikilinks.ui.page.InterWikiLinksPage = function ( cfg ) {
 OO.inheritClass( bs.interwikilinks.ui.page.InterWikiLinksPage, OOJSPlus.ui.booklet.DialogBookletPage );
 
 bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.getItems = function () {
-	this.prefix = new OO.ui.TextInputWidget();
-	this.url = new OO.ui.TextInputWidget();
+	this.prefix = new OO.ui.TextInputWidget( {
+		required: true
+	} );
+	this.url = new OO.ui.TextInputWidget( {
+		required: true
+	} );
 
 	this.prefixLayout = new OO.ui.FieldLayout( this.prefix, {
 		label: mw.message( 'bs-interwikilinks-labelprefix' ).plain(),
-		align: 'left'
+		align: 'top'
 	} );
 	this.urlLayout = new OO.ui.FieldLayout( this.url, {
 		label: mw.message( 'bs-interwikilinks-labelurl' ).plain(),
-		align: 'left'
+		align: 'top'
 	} );
 
 	return [
@@ -52,6 +56,8 @@ bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.getAbilities = function (
 
 bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.onAction = function ( action ) {
 	const dfd = $.Deferred();
+	this.urlLayout.setErrors( [] );
+	this.prefixLayout.setErrors( [] );
 
 	if ( action === 'done' ) {
 		bs.api.tasks.execSilent(
@@ -66,7 +72,17 @@ bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.onAction = function ( act
 					dfd.resolve( { action: 'close', data: { success: true } } );
 				},
 				failure: ( response ) => {
-					dfd.reject( response.errors[ 0 ].message );
+					if ( response.errors[ 0 ].id === 'iwediturl' ) {
+						this.url.setValidityFlag( false );
+						this.urlLayout.setErrors( [ response.errors[ 0 ].message ] );
+						dfd.resolve( {} );
+					} else if ( response.errors[ 0 ].id === 'iweditprefix' ) {
+						this.prefix.setValidityFlag( false );
+						this.prefixLayout.setErrors( [ response.errors[ 0 ].message ] );
+						dfd.resolve( {} );
+					} else {
+						dfd.reject( response.errors[ 0 ].message );
+					}
 				}
 			}
 		);
