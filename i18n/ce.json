@@ -23,5 +23,8 @@
 	"bs-interwikilinks-link-edited": "interwiki хьажорг тойина",
 	"apihelp-bs-interwikilinks-tasks-summary": "InterWikiLinks шордаран тӀедилларш ло.",
 	"action-interwikilinks-viewspecialpage": "хьажа специалан агӀо \"{{int:bs-interwikilinks-label}}\"",
-	"right-interwikilinks-viewspecialpage": "белхан агӀонан тӀекхачар [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "белхан агӀонан тӀекхачар [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-desc": "Административан интерфейс вики-интервикин хьажоргаш тӀетоха а, хийца а, дӀайаха а",
+	"bs-interwikilinks-invalid-pfx-spc": "Нийса йоцу дешхьалхе. Дехар до, кӀайдаргаш ма лелайе.",
+	"bs-interwikilinks-invalid-url-spc": "Нийса йоцу URL. Дехар до, кӀайдаргаш ма лелайе."
 }
