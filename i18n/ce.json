@@ -5,6 +5,9 @@
 			"Умар"
 		]
 	},
+	"bs-interwikilinks-desc": "Административан интерфейс вики-интервикин хьажоргаш тӀетоха а, хийца а, дӀайаха а",
+	"bs-interwikilinks-invalid-pfx-spc": "Нийса йоцу дешхьалхе. Дехар до, кӀайдаргаш ма лелайе.",
+	"bs-interwikilinks-invalid-url-spc": "Нийса йоцу URL. Дехар до, кӀайдаргаш ма лелайе.",
 	"bs-interwikilinks-label": "Интервики-хьажоргаш",
 	"bs-interwikilinks-link-created": "Йукъаравикин хьажорг кхоьллина.",
 	"bs-interwikilinks-link-added": "Йукъаравикин хьажорг тӀеэцна.",
