@@ -1,7 +1,6 @@
 <?php
 
 use BlueSpice\Tests\BSApiTasksTestBase;
-use MediaWiki\MediaWikiServices;
 
 /**
  * @group Broken
@@ -128,6 +127,6 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	}
 
 	protected function clearCache() {
-		MediaWikiServices::getInstance()->getInterwikiLookup()->resetLocalCache();
+		$this->getServiceContainer()->getInterwikiLookup()->resetLocalCache();
 	}
 }
