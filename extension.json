@@ -34,9 +34,6 @@
 						"maintenanceadmin"
 					]
 				}
-			},
-			"AdminToolRegistry": {
-				"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
 			}
 		}
 	},
