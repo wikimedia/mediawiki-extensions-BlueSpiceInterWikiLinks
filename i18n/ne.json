@@ -19,11 +19,11 @@
 	"bs-interwikilinks-pfxtoolong": "यो उपसर्ग धेरै लामो भयो। कृपया बढीमा ३२ क्यारेक्टरको उपसर्ग प्रयोग गर्नुहोस।",
 	"bs-interwikilinks-pfxexists": "उपसर्ग पहिले देखि छ।",
 	"bs-interwikilinks-headerprefix": "उपसर्ग",
+	"bs-interwikilinks-headerurl": "युआरएल",
 	"bs-interwikilinks-titleaddinterwikilink": "अन्तरविकि लिङ्क जोड्ने",
 	"bs-interwikilinks-titleeditinterwikilink": "अन्तरविकि लिङ्क सम्पादन गर्ने",
 	"bs-interwikilinks-labelprefix": "उपसर्ग",
+	"bs-interwikilinks-labelurl": "युआरएल",
 	"bs-interwikilinks-titledeleteinterwikilink": "अन्तरविकि लिङ्क मेट्ने",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "के तपाईँ साच्चै यो अन्तरविकी लिङ्कलाई मेट्न चाहनुहुन्छ?",
-	"bs-interwikilinks-headerurl": "युआरएल",
-	"bs-interwikilinks-labelurl": "युआरएल"
+	"bs-interwikilinks-confirmdeleteinterwikilink": "के तपाईँ साच्चै यो अन्तरविकी लिङ्कलाई मेट्न चाहनुहुन्छ?"
 }
