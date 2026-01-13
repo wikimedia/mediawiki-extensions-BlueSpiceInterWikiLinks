@@ -3,6 +3,7 @@
 		"authors": [
 			"Jopparn",
 			"Josve05a",
+			"Stefan2255",
 			"Technic2",
 			"WikiPhoenix"
 		]
@@ -26,6 +27,7 @@
 	"bs-interwikilinks-titledeleteinterwikilink": "Ta bort interwiki-länk",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Är du säker på att du vill radera denna interwiki-länk?",
 	"bs-interwikilinks-link-edited": "Interwikilänken har redigerats",
+	"apihelp-bs-interwikilinks-tasks-summary": "Tillhandahåller uppgifterna för tillägget InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "visa specialsidan \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Interwiki-länkar",
 	"right-interwikilinks-viewspecialpage": "Åtkomst till specialsidan [[Special:InterWikiLinks]]."
