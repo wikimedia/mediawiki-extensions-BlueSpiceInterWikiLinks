@@ -8,7 +8,12 @@ use OOJSPlus\Special\OOJSGridSpecialPage;
 class InterWikiLinks extends OOJSGridSpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'InterWikiLinks', 'interwikilinks-viewspecialpage' );
+		parent::__construct( 'InterWikiLinks' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'interwikilinks-viewspecialpage';
 	}
 
 	/**
