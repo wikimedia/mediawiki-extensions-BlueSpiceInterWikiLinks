@@ -30,5 +30,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Voorziet in de taken voor de uitbreiding InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "de speciale pagina \"{{int:bs-interwikilinks-label}}\" te bekijken",
 	"interwikilinks": "Interwikilinks",
-	"right-interwikilinks-viewspecialpage": "Toegang hebben tot de speciale pagina [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Toegang hebben tot de speciale pagina [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "De url kon niet worden gevalideerd."
 }
