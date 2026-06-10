@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Pyscowicz",
-			"Silvonen"
+			"Silvonen",
+			"Wikipeedikko"
 		]
 	},
 	"bs-interwikilinks-headerprefix": "Etuliite",
 	"bs-interwikilinks-labelprefix": "Etuliite",
 	"bs-interwikilinks-insertlink-labelprefix": "Etuliite",
 	"bs-interwikilink-select-a-prefix": "Valitse etuliite",
-	"bs-interwikilinks-link-created": "Interwiki-linkki on luotu."
+	"bs-interwikilinks-link-created": "Interwiki-linkki on luotu.",
+	"bs-interwikilinks-url-validate-fail": "Verkko-osoitetta ei voitu vahvistaa."
 }
