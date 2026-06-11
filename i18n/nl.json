@@ -17,7 +17,7 @@
 	"bs-interwikilinks-link-deleted": "De interwikikoppeling is verwijderd.",
 	"bs-interwikilinks-nooldpfx": "Het vorige voorvoegsel is niet gevonden.",
 	"bs-interwikilinks-nopfx": "Geef een voorvoegsel op.",
-	"bs-interwikilinks-nourl": "Geef een URL op.",
+	"bs-interwikilinks-nourl": "Geef een url op.",
 	"bs-interwikilinks-pfxtoolong": "Het voorvoegsel is te lang. Gebruik maximaal 32 tekens.",
 	"bs-interwikilinks-pfxexists": "Dit voorvoegsel bestaat al.",
 	"bs-interwikilinks-headerprefix": "Voorvoegsel",
