@@ -18,7 +18,6 @@ class BSApiTasksInterWikiLinksManagerTest extends BSApiTasksTestBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getModuleName() {
