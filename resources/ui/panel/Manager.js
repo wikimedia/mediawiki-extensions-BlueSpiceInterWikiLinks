@@ -25,6 +25,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 		multiSelect: false,
 		exportable: true,
 		style: 'differentiate-rows',
+		stateId: 'interwikilinks-manager',
 		columns: {
 			iw_prefix: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-interwikilinks-headerprefix' ).text(),
